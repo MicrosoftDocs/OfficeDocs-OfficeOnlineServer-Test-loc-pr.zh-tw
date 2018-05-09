@@ -1,0 +1,139 @@
+﻿---
+title: Set-SPWOPIBinding
+TOCTitle: Set-SPWOPIBinding
+ms:assetid: e373528f-e69b-4e25-9df4-3a5f80ab64ac
+ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/JJ219454(v=office.15)
+ms:contentKeyID: 49565149
+ms.date: 12/22/2017
+mtps_version: v=office.15
+ms.translationtype: HT
+---
+
+# Set-SPWOPIBinding
+
+ 
+
+_**適用版本：**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+
+_**上次修改主題的時間：**2015-03-09_
+
+更新應用程式或副檔名繫結的預設按鍵動作。
+
+## 語法
+
+    Set-SPWOPIBinding [-Identity] <SPWopiBindingPipeBind> -DefaultAction <SwitchParameter> [-AssignmentCollection <SPAssignmentCollection>] [-Confirm [<SwitchParameter>]] [-WhatIf [<SwitchParameter>]]
+
+## 詳細描述
+
+**Set-SPWOPIBinding** Cmdlet 可更新應用程式或副檔名繫結的預設按鍵動作。例如，您可以設定預設按鍵動作，用於檢視 SharePoint 文件庫中的 Word 文件。若要執行此項操作，您可以將預設動作設為「檢視」-「Word」繫結時為 True。
+
+一般而言，您將使用 **Get-SPWOPIBinding** 命令的輸出作為此命令的 -Identity 屬性值。如需詳細資訊，請參閱 [Get-SPWOPIBinding](get-spwopibinding.md)。
+
+<table>
+<thead>
+<tr class="header">
+<th><img src="images/JJ219449.important(Office.15).gif" title="重要事項" alt="重要事項" /><strong>重要事項：</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>您只能設定使用 <strong>New-SPWOPIBinding</strong> 命令所建立的繫結。若要覆寫內建繫結 (例如，檢視 SharePoint 文件庫中的 Word 文件時採取的動作、建立新的繫結、使用 <strong>New-SPWOPIBinding</strong> 以及指派不同的動作)。如需詳細資訊，請參閱 <a href="new-spwopibinding.md">New-SPWOPIBinding</a>。</td>
+</tr>
+</tbody>
+</table>
+
+
+SharePoint Management Shell
+
+## 參數
+
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>參數</th>
+<th>必要</th>
+<th>類型</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>Identity</strong></p></td>
+<td><p>必要</p></td>
+<td><p>Microsoft.SharePoint.PowerShell.SPWopiBindingPipeBind</p></td>
+<td><p>指定繫結。一般而言，您將使用 <strong>Get-SPWOPIBinding</strong> 命令的輸出作為 -Identity 值。</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>DefaultAction</strong></p></td>
+<td><p>必要</p></td>
+<td><p>System.Management.Automation.SwitchParameter</p></td>
+<td><p>指定是否應針對繫結中的應用程式或副檔名，將繫結設為預設按鍵動作。</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>AssignmentCollection</strong></p></td>
+<td><p>選用</p></td>
+<td><p>Microsoft.SharePoint.PowerShell.SPAssignmentCollection</p></td>
+<td><p>以適當處理方式來管理物件。例如使用 <strong>SPWeb</strong> 或 <strong>SPSite</strong> 物件時可能會使用大量記憶體，在 Windows PowerShell 指令碼中使用這些物件時需要適當的記憶體管理。透過使用 <strong>SPAssignment</strong> 物件，您可以在物件需要用來釋放記憶體時，將物件指派給變數及捨棄物件。使用 <strong>SPWeb</strong>、<strong>SPSite</strong> 或 <strong>SPSiteAdministration</strong> 物件時，如果不使用指派集合或 <strong>Global</strong> 參數，則物件會自動遭到捨棄。</p>
+<div class="alert">
+<table>
+<thead>
+<tr class="header">
+<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>使用 <strong>Global</strong> 參數時，所有物件都會都包含在全域存放區。如果物件不會立即使用，或使用 <strong>Stop-SPAssignment</strong> 命令加以捨棄，則會發生記憶體不足的狀況。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<p></p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Confirm</strong></p></td>
+<td><p>選用</p></td>
+<td><p>System.Management.Automation.SwitchParameter</p></td>
+<td><p>在執行命令之前，提示您確認操作。如需詳細資訊，請輸入下列命令：<strong>get-help about_commonparameters</strong>。。</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>WhatIf</strong></p></td>
+<td><p>選用</p></td>
+<td><p>System.Management.Automation.SwitchParameter</p></td>
+<td><p>顯示訊息會描述命令的功效而不執行命令。如需詳細資訊，請輸入下列命令：<strong>get-help about_commonparameters</strong>。。</p></td>
+</tr>
+</tbody>
+</table>
+
+
+## 輸入類型
+
+## 傳回類型
+
+## 範例
+
+\--------------範例-----------------
+
+    Get-SPWOPIBinding -Action "view" -Application "Word"| Set-SPWOPIBinding -DefaultAction
+
+此範例會將預設按鍵動作設為檢視 SharePoint 文件庫中的 Word 文件。您可以執行 Cmdlet **Get-SPWOPIBinding –Action “view” –Application “Word”**，以確認已將預設按鍵動作設為檢視 Word。**IsDefaultAction** 值會設為 “True”。
+
+## 另請參閱
+
+
+[Get-SPWOPIBinding](get-spwopibinding.md)  
+[Remove-SPWOPIBinding](remove-spwopibinding.md)  
+[New-SPWOPIBinding](new-spwopibinding.md)  
+
+
+[Office Web Apps Server 的內容藍圖](content-roadmap-for-office-web-apps-server.md)  
+[搭配並用 Office Web Apps 與 SharePoint 2013](use-office-web-apps-with-sharepoint-2013.md)
+
