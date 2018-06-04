@@ -480,5 +480,5 @@ Office Web Apps Server 不支援使用 Microsoft 自動更新程序套用 Office
 [Office.com （提供桌上型電腦或行動裝置上的 Office Web Apps）](https://go.microsoft.com/fwlink/p/?linkid=266657)  
   
 
-[apply-software-updates-to-office-web-apps-server.md](apply-software-updates-to-office-web-apps-server.md)
+[https://technet.microsoft.com/zh-tw/library/jj966220](apply-software-updates-to-office-web-apps-server.md)
 
