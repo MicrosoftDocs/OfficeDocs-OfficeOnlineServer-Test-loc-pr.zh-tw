@@ -13,13 +13,13 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Office Web Apps Server_
+_**適用版本：** Office Web Apps Server_
 
-_**上次修改主題的時間：**2017-10-10_
+_**上次修改主題的時間：** 2017-10-10_
 
 **摘要：** 描述 Office Web Apps Server 需求和先決條件，包括 HTTPS、憑證、虛擬化、負載平衡、拓撲及安全性。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 Office Web Apps Server 在內部部署環境中提供瀏覽器型版本的 Office 應用程式，讓使用者更有彈性和共同作業機會。本文說明在您的組織中安裝 Office Web Apps Server 的需求和所需採取的步驟。
 
@@ -348,7 +348,7 @@ Office Web Apps Server 2013 語言套件可讓使用者從 SharePoint 2013 文�
 
   - **規劃傳入和傳出的通訊。** 在網際網路對向部署中，透過 NAT 裝置路由傳送所有傳出的通訊。在多伺服器陣列中，使用負載平衡器處理所有傳入的通訊。
 
-  - **確定 Office Web Apps Server 伺服器陣列中的所有伺服器都加入網域，成為相同組織單位 (OU) 的一部分。**使用 [New-OfficeWebAppsFarm](new-officewebappsfarm.md) Cmdlet 中的 **FarmOU** 參數，防止不在此 OU 中的其他伺服器加入伺服器陣列。
+  - **確定 Office Web Apps Server 伺服器陣列中的所有伺服器都加入網域，成為相同組織單位 (OU) 的一部分。** 使用 [New-OfficeWebAppsFarm](new-officewebappsfarm.md) Cmdlet 中的 **FarmOU** 參數，防止不在此 OU 中的其他伺服器加入伺服器陣列。
 
   - **針對所有傳入的要求使用超文字安全傳輸通訊協定 (HTTPS)。**
 
@@ -452,7 +452,7 @@ Office Web Apps Server 使用的憑證必須符合下列需求：
 
 您可以在 [New-OfficeWebAppsFarm](new-officewebappsfarm.md) (適用於新的伺服器陣列) 或 [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (適用於現有的伺服器陣列) 中使用下列 Windows PowerShell 參數，設定線上檢視程式。
 
-  - **OpenFromUrlEnabled：**開啟或關閉線上檢視程式。此參數可以為具有 URL 和 UNC 路徑的檔案，控制線上檢視程式。根據預設，當您建立新的 Office Web Apps Server 伺服器陣列時，此參數會設為 False (停用)。
+  - **OpenFromUrlEnabled：** 開啟或關閉線上檢視程式。此參數可以為具有 URL 和 UNC 路徑的檔案，控制線上檢視程式。根據預設，當您建立新的 Office Web Apps Server 伺服器陣列時，此參數會設為 False (停用)。
 
   - **OpenFromUncEnabled**   當線上檢視程式開啟時 (使用 OpenFromUrlEnabled 設為 True)，此參數會開啟或關閉線上檢視程式顯示 UNC 路徑中檔案的功能。根據預設，此參數設為 True，但是在您允許從 UNC 路徑開啟檔案之前，請確定 OpenFromUrlEnabled 也設為 True。如前所述，如果您已設定 Office Web Apps Server 連接至網際網路，建議您將此參數設為 False。
 
@@ -480,5 +480,5 @@ Office Web Apps Server 不支援使用 Microsoft 自動更新程序套用 Office
 [Office.com （提供桌上型電腦或行動裝置上的 Office Web Apps）](https://go.microsoft.com/fwlink/p/?linkid=266657)  
   
 
-[https://technet.microsoft.com/zh-tw/library/jj966220](apply-software-updates-to-office-web-apps-server.md)
+[apply-software-updates-to-office-web-apps-server.md](apply-software-updates-to-office-web-apps-server.md)
 
