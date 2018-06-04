@@ -1,4 +1,4 @@
-﻿---
+---
 title: Office Web Apps Server 概觀
 TOCTitle: 概觀：Office Web Apps Server 概觀
 ms:assetid: 4b199a88-387f-4121-820d-7af580e2a3e8
@@ -136,5 +136,5 @@ Office Web Apps Server 在位址 http://*OfficeWebAppsServername*/op/generate.as
 [部署 Office Web Apps Server](deploy-office-web-apps-server.md)  
   
 
-[deploy-office-web-apps-server.md](deploy-office-web-apps-server.md)
+[https://technet.microsoft.com/zh-tw/library/jj219455](deploy-office-web-apps-server.md)
 
