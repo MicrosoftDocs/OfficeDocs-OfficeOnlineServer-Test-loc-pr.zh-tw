@@ -1,4 +1,4 @@
-﻿---
+---
 title: 套用軟體更新至 Office Web Apps Server
 TOCTitle: 套用軟體更新至 Office Web Apps Server
 ms:assetid: 5d15dbd9-374e-422a-a870-43270dd0a2db
@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps Server_
+_**適用版本：** Office Web Apps Server_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**說明如何套用軟體更新到 Office Web Apps Server 陣列。
+**摘要：** 說明如何套用軟體更新到 Office Web Apps Server 陣列。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 在新版 Office Web Apps Server 推出之後，Microsoft 提供了一系列的軟體更新來協助改善伺服器的安全性、效能和可靠性。本文說明如何套用軟體更新到 Office Web Apps Server Server 陣列中的個別伺服器。
 
@@ -96,7 +96,7 @@ _**上次修改主題的時間：**2016-12-16_
 
 3.  在該伺服器上安裝 Office Web Apps Server 更新。如果出現提示，請重新啟動伺服器。
 
-4.  以系統管理員身分開啟 Windows PowerShell 提示字元，並執行 **New-OfficeWebAppsFarm** Cmdlet 來重建 Office Web Apps Server 伺服器陣列。您為 **–InternalURL** 指定的 URL，是執行 Office Web Apps Server 的伺服器名稱，例如 **http://Contoso-WAC**。在此情況下，您會使用先前的 Office Web Apps Server 伺服器陣列所使用的相同名稱。請使用您第一次建立 Office Web Apps Server 伺服器陣列時所使用的相同額外參數。例如，**–AllowHttp** 參數會將伺服器陣列設定為使用 HTTP，而 **–EditingEnabled** 參數在與 SharePoint 2013 搭配使用時，則可啟用在 Office Web Apps 中進行編輯。Lync Server 2013 或 Exchange Server 2013 不使用 **–EditingEnabled** 參數，因為那些主機不支援編輯。
+4.  以系統管理員身分開啟 Windows PowerShell 提示字元，並執行 **New-OfficeWebAppsFarm** Cmdlet 來重建 Office Web Apps Server 伺服器陣列。您為 **–InternalURL** 指定的 URL，是執行 Office Web Apps Server 的伺服器名稱，例如 **http://Contoso-WAC** 。在此情況下，您會使用先前的 Office Web Apps Server 伺服器陣列所使用的相同名稱。請使用您第一次建立 Office Web Apps Server 伺服器陣列時所使用的相同額外參數。例如，**–AllowHttp** 參數會將伺服器陣列設定為使用 HTTP，而 **–EditingEnabled** 參數在與 SharePoint 2013 搭配使用時，則可啟用在 Office Web Apps 中進行編輯。Lync Server 2013 或 Exchange Server 2013 不使用 **–EditingEnabled** 參數，因為那些主機不支援編輯。
     
     下列範例中的程式碼會建立新的 Office Web Apps Server 伺服器陣列，名為 http://Contoso-WAC。
     
