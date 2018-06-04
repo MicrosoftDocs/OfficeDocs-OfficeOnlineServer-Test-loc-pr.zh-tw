@@ -1,4 +1,4 @@
-﻿---
+---
 title: 規劃 Office Web Apps Server
 TOCTitle: 規劃 Office Web Apps Server
 ms:assetid: 2e147f11-6f47-46bc-90bf-b2f179958d11
@@ -480,5 +480,5 @@ Office Web Apps Server 不支援使用 Microsoft 自動更新程序套用 Office
 [Office.com （提供桌上型電腦或行動裝置上的 Office Web Apps）](https://go.microsoft.com/fwlink/p/?linkid=266657)  
   
 
-[apply-software-updates-to-office-web-apps-server.md](apply-software-updates-to-office-web-apps-server.md)
+[套用軟體更新至 Office Web Apps Server](apply-software-updates-to-office-web-apps-server.md)
 
