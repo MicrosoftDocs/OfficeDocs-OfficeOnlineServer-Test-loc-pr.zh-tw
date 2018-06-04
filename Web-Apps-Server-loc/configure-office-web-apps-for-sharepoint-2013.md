@@ -1,4 +1,4 @@
-﻿---
+---
 title: 設定 Office Web Apps for SharePoint 2013
 TOCTitle: 設定 Office Web Apps for SharePoint 2013
 ms:assetid: a5276781-133b-413c-beca-b851e17c2081
@@ -113,11 +113,15 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 如果此命令傳回 **False**，請執行下列命令將此設為 **True**。
 
+```
     $config = (Get-SPSecurityTokenServiceConfig)
-
+```
+```
     $config.AllowOAuthOverHttp = $true
-
+```
+```
     $config.Update()
+```
 
 再次執行下列命令，確認現在 AllowOAuthOverHttp 設定已設為**True**。
 
