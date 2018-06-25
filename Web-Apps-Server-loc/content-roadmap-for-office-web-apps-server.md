@@ -143,7 +143,7 @@ Office Web Apps Server 是一款新的 Office 伺服器產品，負責提供瀏�
 <td><p>第一步是<a href="deploy-office-web-apps-server.md">準備伺服器來執行 Office Web Apps Server</a>。接著<a href="deploy-office-web-apps-server.md">安裝 Office Web Apps Server</a> 並套用最新的 Office Web Apps Server 更新。然後<a href="deploy-office-web-apps-server.md">安裝 Office Web Apps Server 的語言套件</a>。</p>
 <p><br />
 </p>
-<p>若要評估 Office Web Apps Server 運作情形，您可以<a href="deploy-office-web-apps-server.md">在測試環境中部署單一伺服器 Office Web Apps Server 伺服器陣列</a>。或者，若要部署更安全的環境，您可以<a href="e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5(office.15)#singlehttps">部署使用 HTTPS 的單一伺服器 Office Web Apps Server 伺服器陣列</a>。如果您必須支援很多使用者，可以<a href="e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5(office.15)#multihttps">部署使用 HTTPS 的多伺服器、負載平衡 Office Web Apps Server 伺服器陣列</a>。</p>
+<p>若要評估 Office Web Apps Server 運作情形，您可以<a href="deploy-office-web-apps-server.md">在測試環境中部署單一伺服器 Office Web Apps Server 伺服器陣列</a>。或者，若要部署更安全的環境，您可以<a href="deploy-office-web-apps-server.md">部署使用 HTTPS 的單一伺服器 Office Web Apps Server 伺服器陣列</a>。如果您必須支援很多使用者，可以<a href="deploy-office-web-apps-server.md">部署使用 HTTPS 的多伺服器、負載平衡 Office Web Apps Server 伺服器陣列</a>。</p>
 <p><br />
 </p>
 <p>部署 Office Web Apps Server 之後，就必須設定主機。您可以<a href="configure-office-web-apps-for-sharepoint-2013.md">設定 SharePoint 2013</a>、<a href="http://go.microsoft.com/fwlink/p/?linkid=256611">設定 Exchange Server 2013</a> 及<a href="http://go.microsoft.com/fwlink/p/?linkid=256902">設定 Lync Server 2013</a> 來使用 Office Web Apps Server。</p>
