@@ -133,7 +133,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 ## 在使用 HTTPS 的實際執行環境
 
-在開始進行下列程序前，請確定您已按照＜[部署使用 HTTPS 的單一伺服器 Office Web Apps Server 陣列](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#singlehttps)＞或＜[部署使用 HTTPS 的多伺服器、負載平衡 Office Web Apps Server 伺服器陣列](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#multihttps)＞中的步驟設定 Office Web Apps Server。
+在開始進行下列程序前，請確定您已按照＜[部署使用 HTTPS 的單一伺服器 Office Web Apps Server 陣列](deploy-office-web-apps-server#部署使用-https-的單一伺服器-office-web-apps-server-伺服器陣列)＞或＜[部署使用 HTTPS 的多伺服器、負載平衡 Office Web Apps Server 伺服器陣列](deploy-office-web-apps-server#部署使用-https-的多伺服器負載平衡-office-web-apps-server-伺服器陣列)＞中的步驟設定 Office Web Apps Server。
 
 ## 步驟 1：開啟 SharePoint 2013 管理命令介面
 
