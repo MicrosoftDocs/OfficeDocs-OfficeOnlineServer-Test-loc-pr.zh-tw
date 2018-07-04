@@ -277,6 +277,7 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 陣列現在已準備好透過 HTTP 提供 Office Web Apps 功能給主機。如需關於如何設定主機的詳細資訊，請造訪[設定 Office Web Apps for SharePoint 2013](configure-office-web-apps-for-sharepoint-2013.md)。
 
 ## 部署使用 HTTPS 的單一伺服器 Office Web Apps Server 伺服器陣列
+<a name="singlehttps"> </a>
 
 在大部分的實際執行環境中，強烈建議使用 HTTPS 作為安全性功能。此外，如果想要提供 Office Web Apps Server 功能給 Lync Server 2013 (其可讓使用者在瀏覽器中檢視 PowerPoint 廣播)，則也需要 HTTPS。以下是如何安裝使用 HTTPS 的單一伺服器 Office Web Apps Server 伺服器陣列。您將需要在伺服器上安裝憑證 (如＜[使用 HTTPS 保護 Office Web Apps Server 通訊](plan-office-web-apps-server.md)＞所述)。
 
@@ -350,6 +351,7 @@ default="true" ext="xls"/><action name="view"
   - [部署 Office Web Apps Server 及 Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
 ## 部署使用 HTTPS 的多伺服器、負載平衡 Office Web Apps Server 伺服器陣列
+<a name="multihttps"> </a>
 
 如果您預期會有許多流量流進 Office Web Apps Server 伺服器陣列，而且想要在網際網路和內部網路上提供該伺服器陣列，則可以使用這類型的拓撲。本節顯示如何安裝使用負載平衡器與 HTTPS 的多伺服器 Office Web Apps Server 伺服器陣列。如果有興趣，可[閱讀關於此拓撲的詳細資訊](plan-office-web-apps-server.md)。
 
