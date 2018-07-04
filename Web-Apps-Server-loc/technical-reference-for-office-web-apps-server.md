@@ -39,7 +39,7 @@ _**上次修改主題的時間：**2016-12-16_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="windows-powershell-for-office-web-apps-server.md">Office Web Apps Server 的 Windows PowerShell</a></p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/?view=officewebapps-ps">Office Web Apps Server 的 Windows PowerShell</a></p></td>
 <td><p>列出 Office Web Apps Server 的 Windows PowerShell Cmdlet。</p></td>
 </tr>
 </tbody>

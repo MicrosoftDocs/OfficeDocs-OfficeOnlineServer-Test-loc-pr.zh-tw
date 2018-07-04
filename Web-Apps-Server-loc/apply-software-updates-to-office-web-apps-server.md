@@ -46,7 +46,7 @@ _**上次修改主題的時間：**2016-12-16_
 </thead>
 <tbody>
 <tr class="odd">
-<td>Office Web Apps Server 不支援使用自動更新程序來套用 Office Web Apps Server 更新。這是因為 Office Web Apps Server 的更新必須以本文所述的特定方式套用。如果自動套用 Office Web Apps Server 更新，使用者可能無法在 Office Web Apps 檢視或編輯文件。如果發生此情況，您必須重建 Office Web Apps Server 伺服器陣列。若要重建伺服器陣列，您必須使用 <a href="remove-officewebappsmachine.md">Remove-OfficeWebAppsMachine</a> 從伺服器陣列中移除 Office Web Apps Server、使用 [新增或移除程式] 解除安裝 Office Web Apps Server，然後依照＜<a href="deploy-office-web-apps-server.md">部署 Office Web Apps Server</a>＞中所述的步驟重新安裝 Office Web Apps Server。在重新安裝之後，再依照本文章所述的步驟套用更新。<br />
+<td>Office Web Apps Server 不支援使用自動更新程序來套用 Office Web Apps Server 更新。這是因為 Office Web Apps Server 的更新必須以本文所述的特定方式套用。如果自動套用 Office Web Apps Server 更新，使用者可能無法在 Office Web Apps 檢視或編輯文件。如果發生此情況，您必須重建 Office Web Apps Server 伺服器陣列。若要重建伺服器陣列，您必須使用 <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a> 從伺服器陣列中移除 Office Web Apps Server、使用 [新增或移除程式] 解除安裝 Office Web Apps Server，然後依照＜<a href="deploy-office-web-apps-server.md">部署 Office Web Apps Server</a>＞中所述的步驟重新安裝 Office Web Apps Server。在重新安裝之後，再依照本文章所述的步驟套用更新。<br />
 請務必檢閱＜<a href="plan-office-web-apps-server.md">規劃 Office Web Apps Server 更新</a>＞中的方針，建立 Office Web Apps Server 伺服器陣列的更新程序。</td>
 </tr>
 </tbody>
@@ -59,7 +59,7 @@ _**上次修改主題的時間：**2016-12-16_
 
 針對 Office Web Apps Server 發行的更新將會更新 Office Web Apps Server 及任何已安裝的 Office Web Apps Server 語言套件。沒有專為 Office Web Apps Server 語言套件而設的個別更新。
 
-在升級過程中，您將必須重建 Office Web Apps Server伺服器陣列。要準備重建 Office Web Apps Server 伺服器陣列時，檢閱您目前的 Office Web Apps Server 伺服器陣列內容，方法是執行 Windows PowerShell Cmdlet **Get-OfficeWebAppsFarm** 並檢閱 [New-OfficeWebAppsFarm](new-officewebappsfarm.md) 的參數。您用於 **New-OfficeWebAppsFarm** 的參數，應該與您第一次設定 Office Web Apps Server 伺服器陣列時使用的參數相同。
+在升級過程中，您將必須重建 Office Web Apps Server伺服器陣列。要準備重建 Office Web Apps Server 伺服器陣列時，檢閱您目前的 Office Web Apps Server 伺服器陣列內容，方法是執行 Windows PowerShell Cmdlet **Get-OfficeWebAppsFarm** 並檢閱 [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) 的參數。您用於 **New-OfficeWebAppsFarm** 的參數，應該與您第一次設定 Office Web Apps Server 伺服器陣列時使用的參數相同。
 
 <table>
 <colgroup>
@@ -102,7 +102,7 @@ _**上次修改主題的時間：**2016-12-16_
     
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
     
-    ＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞中將說明其他可設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
+    ＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞中將說明其他可設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
 
 ## 套用軟體更新至多 Office Web Apps Server 伺服器陣列
 
@@ -126,7 +126,7 @@ _**上次修改主題的時間：**2016-12-16_
     
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
     
-    ＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞中將說明其他可設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
+    ＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞中將說明其他可設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
 
 6.  視 Office Web Apps Server 伺服器陣列有多少台伺服器而定，將流量負載平衡到新的伺服器陣列。您可以將此步驟延到在伺服器陣列中加入了更多更新過的伺服器後再執行。
 
@@ -143,10 +143,10 @@ _**上次修改主題的時間：**2016-12-16_
 ## 另請參閱
 
 
-[Remove-OfficeWebAppsMachine](remove-officewebappsmachine.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[Get-OfficeWebAppsFarm](get-officewebappsfarm.md)  
+[Remove-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[Get-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappsfarm?view=officewebapps-ps)  
 
 
 [Office Web Apps Server 的內容藍圖](content-roadmap-for-office-web-apps-server.md)  

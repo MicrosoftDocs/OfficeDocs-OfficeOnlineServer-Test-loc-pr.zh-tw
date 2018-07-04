@@ -251,7 +251,7 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
   - **–EditingEnabled**可再搭配 SharePoint 2013 使用時於 Office Web Apps 中啟用編輯功能。Lync Server 2013 不會使用此參數，因為這些主機不支援編輯功能。
 
-＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
+＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
 
 如果您看到「500 Web 服務例外狀況」或「500.21 - 內部伺服器錯誤」訊息
 
@@ -302,7 +302,7 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
   - **–EditingEnabled** 是選用項目，可在搭配 SharePoint 2013 使用時於 Office Web Apps 中啟用編輯功能。Lync Server 2013 不會使用此參數，因為這些主機不支援編輯功能。
 
-＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
+＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
 
 如果您看到「500 Web 服務例外狀況」或「500.21 - 內部伺服器錯誤」訊息
 
@@ -375,7 +375,7 @@ default="true" ext="xls"/><action name="view"
 
   - **–EditingEnabled** 是選用項目，可在搭配 SharePoint 2013 使用時於 Office Web Apps 中啟用編輯功能。Lync Server 2013 不會使用此參數，因為這些主機不支援編輯功能。
 
-＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
+＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
 
 如果您看到「500 Web 服務例外狀況」或「500.21 - 內部伺服器錯誤」訊息
 
@@ -385,7 +385,7 @@ default="true" ext="xls"/><action name="view"
 
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 
-需要這些參數的更多相關資訊嗎？您可以在＜[New-OfficeWebAppsMachine](new-officewebappsmachine.md)＞中找到這些參數。
+需要這些參數的更多相關資訊嗎？您可以在＜[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)＞中找到這些參數。
 
 ## 步驟 3：驗證已成功建立 Office Web Apps Server 伺服器陣列
 
@@ -437,8 +437,8 @@ default="true" ext="xls"/><action name="view"
 ## 另請參閱
 
 
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
 
 
 [Office Web Apps Server 的內容藍圖](content-roadmap-for-office-web-apps-server.md)  

@@ -27,7 +27,7 @@ _**上次修改主題的時間：**2016-12-16_
 
 根據預設，將 SharePoint 2013 設定為使用 Office Web Apps Server 之後，按一下 Word、PowerPoint、Excel 或 OneNote 檔案就會在瀏覽器中開啟該檔案。PDF 文件會在 Word Web App 中開啟。有兩種方法可以變更此預設行為，以便改為在用戶端應用程式 (或預設的 PDF 閱讀程式) 開啟檔案：
 
-  - **若是 SharePoint 2013 伺服器陣列**   您可以使用 [New-SPWOPIBinding](new-spwopibinding.md) 和 [Set-SPWOPIBinding](set-spwopibinding.md)Windows PowerShell Cmdlet，依照每個檔案類型為 SharePoint 2013 伺服器陣列調整預設開啟行為。這些 Cmdlet 也可用來[調整 PDF 文件的行為](http://go.microsoft.com/fwlink/p/?linkid=330246)。
+  - **若是 SharePoint 2013 伺服器陣列**   您可以使用 [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) 和 [Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps)Windows PowerShell Cmdlet，依照每個檔案類型為 SharePoint 2013 伺服器陣列調整預設開啟行為。這些 Cmdlet 也可用來[調整 PDF 文件的行為](http://go.microsoft.com/fwlink/p/?linkid=330246)。
 
   - **在網站集合或文件庫中**   網站集合管理員和使用者可以使用 SharePoint 2013 中的 OpenInClient 功能指定要在用戶端應用程式或瀏覽器中開啟 Office 檔案。使用者可以在文件庫內容中變更此設定，而網站集合管理員則可以在網站集合管理中變更此設定，或是使用 [Enable-SPFeature](https://technet.microsoft.com/zh-tw/library/ff607803\(v=office.15\)) Cmdlet 啟用 OpenInClient 功能。關於啟用 OpenInClient 功能的幾種不同的方法，請參閱下一節。
 
@@ -59,7 +59,7 @@ _**上次修改主題的時間：**2016-12-16_
 </thead>
 <tbody>
 <tr class="odd">
-<td>本文中的某些程序使用 SharePoint 2013 管理命令介面執行 SharePoint Cmdlet。如果您選擇使用 Windows PowerShell 主控台，則必須使用 <strong>Add-PSSnapin</strong> Cmdlet 新增 Microsoft.SharePoint.PowerShell 嵌入式管理單元。如需 Windows PowerShell 與 SharePoint 2013 如何搭配使用的詳細資訊，請參閱<a href="use-windows-powershell-to-administer-sharepoint-2013.md">使用 Windows Powershell 管理 SharePoint 2013</a>。</td>
+<td>本文中的某些程序使用 SharePoint 2013 管理命令介面執行 SharePoint Cmdlet。如果您選擇使用 Windows PowerShell 主控台，則必須使用 <strong>Add-PSSnapin</strong> Cmdlet 新增 Microsoft.SharePoint.PowerShell 嵌入式管理單元。如需 Windows PowerShell 與 SharePoint 2013 如何搭配使用的詳細資訊，請參閱<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">使用 Windows Powershell 管理 SharePoint 2013</a>。</td>
 </tr>
 </tbody>
 </table>
@@ -109,7 +109,7 @@ _**上次修改主題的時間：**2016-12-16_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>如果您沒有權限，請連絡安裝程式系統管理員或 SQL Server 系統管理員要求權限。如需 Windows PowerShell 權限的其他資訊，請參閱<a href="use-windows-powershell-to-administer-sharepoint-2013.md">權限</a>與 <a href="https://technet.microsoft.com/zh-tw/library/ff607596(v=office.15)">Add-SPShellAdmin</a>。</td>
+    <td>如果您沒有權限，請連絡安裝程式系統管理員或 SQL Server 系統管理員要求權限。如需 Windows PowerShell 權限的其他資訊，請參閱<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">權限</a>與 <a href="https://technet.microsoft.com/zh-tw/library/ff607596(v=office.15)">Add-SPShellAdmin</a>。</td>
     </tr>
     </tbody>
     </table>
@@ -195,7 +195,7 @@ _**上次修改主題的時間：**2016-12-16_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>如果您沒有權限，請連絡安裝程式系統管理員或 SQL Server 系統管理員要求權限。如需 Windows PowerShell 權限的其他資訊，請參閱<a href="use-windows-powershell-to-administer-sharepoint-2013.md">權限</a>與 <a href="https://technet.microsoft.com/zh-tw/library/ff607596(v=office.15)">Add-SPShellAdmin</a>。</td>
+    <td>如果您沒有權限，請連絡安裝程式系統管理員或 SQL Server 系統管理員要求權限。如需 Windows PowerShell 權限的其他資訊，請參閱<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">權限</a>與 <a href="https://technet.microsoft.com/zh-tw/library/ff607596(v=office.15)">Add-SPShellAdmin</a>。</td>
     </tr>
     </tbody>
     </table>
@@ -234,11 +234,11 @@ _**上次修改主題的時間：**2016-12-16_
 ## 另請參閱
 
 
-[Get-SPWOPIBinding](get-spwopibinding.md)  
+[Get-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps)  
 
 
 [Office Web Apps Server 的內容藍圖](content-roadmap-for-office-web-apps-server.md)  
-[使用 Windows Powershell 管理 SharePoint 2013](use-windows-powershell-to-administer-sharepoint-2013.md)  
+[使用 Windows Powershell 管理 SharePoint 2013](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps)  
 [Office Web Apps Server](office-web-apps-server.md)  
 
 
