@@ -32,15 +32,15 @@ _**上次修改主題的時間：**2016-12-16_
 
 1\. 開啟 Windows PowerShell 命令提示字元，並安裝 Office Web Apps Server 所需的角色和服務。請參閱[準備伺服器執行 Office Web Apps Server](deploy-office-web-apps-server.md)。這是必要的動作，因為缺少所需的角色和服務，無法安裝 Office Web Apps Server。  
 2\. 從 [大量授權服務中心 (VLSC)](http://go.microsoft.com/fwlink/p/?linkid=256561) 安裝 Office Web Apps Server 軟體。若要下載 Office Web Apps Server，您必須擁有 Office Professional Plus 2013、Office Standard 2013 或 Office for Mac 2011 的大量授權合約所授予的授權。下載位於 VLSC 入口網站的這些 Office 產品之下。  
-3\. 使用 [New-OfficeWebAppsFarm](new-officewebappsfarm.md) 建立 Office Web Apps Server 伺服器陣列。  
+3\. 使用 [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) 建立 Office Web Apps Server 伺服器陣列。  
 4\. 開啟瀏覽器視窗並移至 http://*ServerName*/hosting/discovery，確認已成功建立 Office Web Apps Server 伺服器陣列。
 
 **在執行 SharePoint 2013 的伺服器上，此影片顯示如何：**
 
 5\. 開啟 SharePoint 2013 管理命令介面。  
-6\. 使用 [New-SPWOPIBinding](new-spwopibinding.md) 建立 Office Web Apps Server 與 SharePoint 2013 之間的繫結。這會設定執行 SharePoint 2013 之伺服器與執行 Office Web Apps Server 之伺服器間的通訊。  
-7\. 使用 [Get-SPWOPIZone](get-spwopizone.md) 檢視 SharePoint 2013 的 WOPI 區域。此步驟會突顯出兩部伺服器是使用不同 WOPI 區域的事實：SharePoint 2013 使用 internal-https，而 Office Web Apps Server 則使用 internal-http。區域必須相符，Office Web Apps 才能正常運作。  
-8\. 使用 [Set-SPWOPIZone](set-spwopizone.md) 將 WOPI 區域變更為 internal-http，以變更 SharePoint 2013 的 WOPI 區域。  
+6\. 使用 [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) 建立 Office Web Apps Server 與 SharePoint 2013 之間的繫結。這會設定執行 SharePoint 2013 之伺服器與執行 Office Web Apps Server 之伺服器間的通訊。  
+7\. 使用 [Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps) 檢視 SharePoint 2013 的 WOPI 區域。此步驟會突顯出兩部伺服器是使用不同 WOPI 區域的事實：SharePoint 2013 使用 internal-https，而 Office Web Apps Server 則使用 internal-http。區域必須相符，Office Web Apps 才能正常運作。  
+8\. 使用 [Set-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIZone?view=sharepoint-ps) 將 WOPI 區域變更為 internal-http，以變更 SharePoint 2013 的 WOPI 區域。  
 9\. 開啟 SharePoint 2013 文件庫中的 Office 文件，以確認 Office Web Apps 可以運作。
 
 如需其中每個步驟的詳細資料，請參閱＜[部署 Office Web Apps Server](deploy-office-web-apps-server.md)＞及＜[設定 Office Web Apps for SharePoint 2013](configure-office-web-apps-for-sharepoint-2013.md)＞文章中的下列各節。

@@ -46,7 +46,7 @@ Office Web Apps 授權提供兩個選項：
 
 SharePoint 2013 提供適用於 Office Web Apps 的新授權規定。如果您啟用 SharePoint 授權，然後啟用 Office Web Apps 編輯功能，則只有具備適當授權的使用者，才能在瀏覽器中實際編輯 Office 檔案。如果沒有為使用者套用任何 Office Web Apps 編輯授權，則僅支援檢視功能。
 
-如需授權如何在 SharePoint 2013 中運作的詳細資訊，請參閱＜[在 SharePoint Server 2013 中設定授權](https://technet.microsoft.com/zh-tw/library/jj219627\(v=office.15\))＞。如需用來啟用編輯功能的 EditingEnabled 參數說明，請參閱＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞及＜[Set-OfficeWebAppsFarm](set-officewebappsfarm.md)＞。
+如需授權如何在 SharePoint 2013 中運作的詳細資訊，請參閱＜[在 SharePoint Server 2013 中設定授權](https://technet.microsoft.com/zh-tw/library/jj219627\(v=office.15\))＞。如需用來啟用編輯功能的 EditingEnabled 參數說明，請參閱＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞及＜[Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps)＞。
 
 即使當沒有編輯授權時，以及當 Office Web Apps Server 伺服器陣列的編輯功能停用時，還是可以在 Office Web Apps 中編輯在 SharePoint 2013 中使用「以連結共用」功能傳送的檔案。
 
@@ -54,7 +54,7 @@ SharePoint 2013 提供適用於 Office Web Apps 的新授權規定。如果您�
 
 Office Web Apps Server 提供 Office Mobile Viewer，讓行動使用者在存取 SharePoint Server 網站時可以使用 Office Web Apps。Office Mobile Viewer 預設為啟用，但是可由 SharePoint Server 網站管理員停用。啟用時，使用者可以使用行動裝置上的瀏覽器，瀏覽至 SharePoint Server 網站、點選 SharePoint Server 文件庫中要開啟的文件，該文件就會在行動瀏覽器中開啟。
 
-您可以在＜[SharePoint 2013 的行動裝置新功能](https://technet.microsoft.com/zh-tw/library/fp161352\(v=office.15\))＞及＜[Overview of mobile devices and SharePoint Server 2013](https://technet.microsoft.com/zh-tw/library/fp161351\(v=office.15\))＞中找到在行動裝置上使用 SharePoint 文件庫的詳細資料。使用者可以在＜[在 Android、iPhone 或 Windows Phone 上使用 Office Web Apps](http://go.microsoft.com/fwlink/p/?linkid=271045)＞中深入了解如何在行動裝置上使用 Office Mobile Viewer。如果您決定要在 SharePoint 2013 上停用 Office Mobile Viewer，請使用 [Remove-SPWOPIBinding](remove-spwopibinding.md) Cmdlet。
+您可以在＜[SharePoint 2013 的行動裝置新功能](https://technet.microsoft.com/zh-tw/library/fp161352\(v=office.15\))＞及＜[Overview of mobile devices and SharePoint Server 2013](https://technet.microsoft.com/zh-tw/library/fp161351\(v=office.15\))＞中找到在行動裝置上使用 SharePoint 文件庫的詳細資料。使用者可以在＜[在 Android、iPhone 或 Windows Phone 上使用 Office Web Apps](http://go.microsoft.com/fwlink/p/?linkid=271045)＞中深入了解如何在行動裝置上使用 Office Mobile Viewer。如果您決定要在 SharePoint 2013 上停用 Office Mobile Viewer，請使用 [Remove-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps) Cmdlet。
 
 ## Excel Web App 與 SharePoint 中 Excel Services 的差異
 
@@ -64,7 +64,7 @@ Excel Web App 跟 SharePoint 中的 Excel Services 有很多共通點，但並�
 
 如需 Excel Web App 與 Excel Services 之差異的詳細資料，請參閱＜[SharePoint Server 2013 的 Excel Services 概觀](https://technet.microsoft.com/zh-tw/library/ee424405\(v=office.15\))＞及＜[比較 SharePoint 中的 Excel Services 與 Excel Web App](http://go.microsoft.com/fwlink/p/?linkid=255460)＞。
 
-如果您的組織決定使用 Excel Services 在瀏覽器中檢視活頁簿，而不使用 Excel Web App，您可以使用 Windows PowerShell **New-SPWOPISuppressionSettings** Cmdlet 在 Excel 活頁簿上關閉 Excel Web App。如需詳細資訊，請參閱＜[New-SPWOPISuppressionSetting](new-spwopisuppressionsetting.md)＞。
+如果您的組織決定使用 Excel Services 在瀏覽器中檢視活頁簿，而不使用 Excel Web App，您可以使用 Windows PowerShell **New-SPWOPISuppressionSettings** Cmdlet 在 Excel 活頁簿上關閉 Excel Web App。如需詳細資訊，請參閱＜[New-SPWOPISuppressionSetting](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps)＞。
 
 ## 另請參閱
 

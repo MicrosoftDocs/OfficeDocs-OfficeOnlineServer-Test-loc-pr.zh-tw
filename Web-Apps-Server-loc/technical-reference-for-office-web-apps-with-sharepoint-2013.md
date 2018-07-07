@@ -41,7 +41,7 @@ _**上次修改主題的時間：**2016-12-16_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="windows-powershell-for-office-web-apps-sharepoint-2013.md">Office Web Apps (SharePoint 2013) 的 Windows PowerShell</a></p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Office Web Apps (SharePoint 2013) 的 Windows PowerShell</a></p></td>
 <td><p>列出用來設定 SharePoint 2013 以使用 Office Web Apps 的 Windows PowerShell Cmdlet。</p></td>
 </tr>
 </tbody>

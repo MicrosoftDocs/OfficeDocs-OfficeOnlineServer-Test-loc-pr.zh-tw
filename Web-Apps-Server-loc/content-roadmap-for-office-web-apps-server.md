@@ -111,7 +111,7 @@ Office Web Apps Server 是一款新的 Office 伺服器產品，負責提供瀏�
 <li><p>如果您要部署 Office Web Apps Server 來搭配 SharePoint 2013 使用，請<a href="plan-office-web-apps-used-with-sharepoint-2013.md">規劃搭配 SharePoint 2013 使用時的 Office Web Apps</a>。</p></li>
 <li><p>Office Web Apps 的<a href="https://technet.microsoft.com/zh-tw/library/cc263526(v=office.15)">瀏覽器支援</a>和 SharePoint 2013 相同。</p></li>
 <li><p>只有使用<a href="plan-office-web-apps-used-with-sharepoint-2013.md">宣告式驗證</a>的 SharePoint 2013 Web 應用程式才能使用 Office Web Apps。</p></li>
-<li><p>您可以免費使用 Office Web Apps 來檢視檔案，但是若要在 Office Web Apps Server 搭配內部部署 SharePoint 2013 使用時<a href="new-officewebappsfarm.md">啟用 Office Web Apps 的編輯功能</a>，則需要<a href="plan-office-web-apps-used-with-sharepoint-2013.md">購買編輯授權</a>。</p></li>
+<li><p>您可以免費使用 Office Web Apps 來檢視檔案，但是若要在 Office Web Apps Server 搭配內部部署 SharePoint 2013 使用時<a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps">啟用 Office Web Apps 的編輯功能</a>，則需要<a href="plan-office-web-apps-used-with-sharepoint-2013.md">購買編輯授權</a>。</p></li>
 </ul>
 <p><br />
 </p>
@@ -143,7 +143,7 @@ Office Web Apps Server 是一款新的 Office 伺服器產品，負責提供瀏�
 <td><p>第一步是<a href="deploy-office-web-apps-server.md">準備伺服器來執行 Office Web Apps Server</a>。接著<a href="deploy-office-web-apps-server.md">安裝 Office Web Apps Server</a> 並套用最新的 Office Web Apps Server 更新。然後<a href="deploy-office-web-apps-server.md">安裝 Office Web Apps Server 的語言套件</a>。</p>
 <p><br />
 </p>
-<p>若要評估 Office Web Apps Server 運作情形，您可以<a href="deploy-office-web-apps-server.md">在測試環境中部署單一伺服器 Office Web Apps Server 伺服器陣列</a>。或者，若要部署更安全的環境，您可以<a href="e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5(office.15)#singlehttps">部署使用 HTTPS 的單一伺服器 Office Web Apps Server 伺服器陣列</a>。如果您必須支援很多使用者，可以<a href="e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5(office.15)#multihttps">部署使用 HTTPS 的多伺服器、負載平衡 Office Web Apps Server 伺服器陣列</a>。</p>
+<p>若要評估 Office Web Apps Server 運作情形，您可以<a href="deploy-office-web-apps-server.md">在測試環境中部署單一伺服器 Office Web Apps Server 伺服器陣列</a>。或者，若要部署更安全的環境，您可以<a href="deploy-office-web-apps-server.md#singlehttps">部署使用 HTTPS 的單一伺服器 Office Web Apps Server 伺服器陣列</a>。如果您必須支援很多使用者，可以<a href="deploy-office-web-apps-server.md#multihttps">部署使用 HTTPS 的多伺服器、負載平衡 Office Web Apps Server 伺服器陣列</a>。</p>
 <p><br />
 </p>
 <p>部署 Office Web Apps Server 之後，就必須設定主機。您可以<a href="configure-office-web-apps-for-sharepoint-2013.md">設定 SharePoint 2013</a>、<a href="http://go.microsoft.com/fwlink/p/?linkid=256611">設定 Exchange Server 2013</a> 及<a href="http://go.microsoft.com/fwlink/p/?linkid=256902">設定 Lync Server 2013</a> 來使用 Office Web Apps Server。</p>
@@ -174,10 +174,10 @@ Office Web Apps Server 是一款新的 Office 伺服器產品，負責提供瀏�
 <p>如果您已部署 Office Web Apps Server 來搭配 SharePoint 2013 使用，則 Office 文件預設將在瀏覽器中開啟。但是，您可以<a href="set-the-default-open-behavior-for-browser-enabled-documents-office-web-apps-when-used-with-sharepoint-2013.md">變更這項行為，讓 Office 文件在用戶端中開啟</a>。</p>
 <p><br />
 </p>
-<p>如果貴組織決定使用 Excel Services 在瀏覽器中檢視活頁簿，而非使用 Excel Web App，則可以使用 Windows PowerShell Cmdlet <a href="new-spwopisuppressionsetting.md">New-SPWOPISuppressionSetting</a> 對 Excel 活頁簿關閉 Excel Web App。</p>
+<p>如果貴組織決定使用 Excel Services 在瀏覽器中檢視活頁簿，而非使用 Excel Web App，則可以使用 Windows PowerShell Cmdlet <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps">New-SPWOPISuppressionSetting</a> 對 Excel 活頁簿關閉 Excel Web App。</p>
 <p><br />
 </p>
-<p>若要<a href="configure-office-web-apps-for-sharepoint-2013.md">中斷 SharePoint 2013 與 Office Web Apps Server 的連線</a>，請使用 Windows PowerShell Cmdlet <a href="remove-spwopibinding.md">Remove-SPWOPIBinding</a>。</p></td>
+<p>若要<a href="configure-office-web-apps-for-sharepoint-2013.md">中斷 SharePoint 2013 與 Office Web Apps Server 的連線</a>，請使用 Windows PowerShell Cmdlet <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps">Remove-SPWOPIBinding</a>。</p></td>
 </tr>
 <tr class="even">
 <td><img src="images/Dn135237.17bfbe9e-7e0e-48dd-887b-b94f8d8f9f22(Office.15).png" title="疑難排解圖示" alt="疑難排解圖示" /></td>
@@ -192,13 +192,13 @@ Office Web Apps Server 是一款新的 Office 伺服器產品，負責提供瀏�
 </p>
 <p>Office Web Apps Server</p>
 <ul>
-<li><p><a href="windows-powershell-for-office-web-apps-server.md">Office Web Apps Server 的 Windows PowerShell</a></p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/?view=officewebapps-ps">Office Web Apps Server 的 Windows PowerShell</a></p></li>
 </ul>
 <p><br />
 </p>
 <p>SharePoint 2013</p>
 <ul>
-<li><p><a href="windows-powershell-for-office-web-apps-sharepoint-2013.md">Office Web Apps (SharePoint 2013) 的 Windows PowerShell</a></p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Office Web Apps (SharePoint 2013) 的 Windows PowerShell</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">

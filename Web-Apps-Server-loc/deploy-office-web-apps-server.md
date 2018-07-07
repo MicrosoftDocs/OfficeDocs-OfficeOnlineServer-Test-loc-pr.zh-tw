@@ -251,7 +251,7 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
   - **–EditingEnabled**可再搭配 SharePoint 2013 使用時於 Office Web Apps 中啟用編輯功能。Lync Server 2013 不會使用此參數，因為這些主機不支援編輯功能。
 
-＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
+＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
 
 如果您看到「500 Web 服務例外狀況」或「500.21 - 內部伺服器錯誤」訊息
 
@@ -277,6 +277,7 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 陣列現在已準備好透過 HTTP 提供 Office Web Apps 功能給主機。如需關於如何設定主機的詳細資訊，請造訪[設定 Office Web Apps for SharePoint 2013](configure-office-web-apps-for-sharepoint-2013.md)。
 
 ## 部署使用 HTTPS 的單一伺服器 Office Web Apps Server 伺服器陣列
+<a name="singlehttps"> </a>
 
 在大部分的實際執行環境中，強烈建議使用 HTTPS 作為安全性功能。此外，如果想要提供 Office Web Apps Server 功能給 Lync Server 2013 (其可讓使用者在瀏覽器中檢視 PowerPoint 廣播)，則也需要 HTTPS。以下是如何安裝使用 HTTPS 的單一伺服器 Office Web Apps Server 伺服器陣列。您將需要在伺服器上安裝憑證 (如＜[使用 HTTPS 保護 Office Web Apps Server 通訊](plan-office-web-apps-server.md)＞所述)。
 
@@ -302,7 +303,7 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
   - **–EditingEnabled** 是選用項目，可在搭配 SharePoint 2013 使用時於 Office Web Apps 中啟用編輯功能。Lync Server 2013 不會使用此參數，因為這些主機不支援編輯功能。
 
-＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
+＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
 
 如果您看到「500 Web 服務例外狀況」或「500.21 - 內部伺服器錯誤」訊息
 
@@ -350,6 +351,7 @@ default="true" ext="xls"/><action name="view"
   - [部署 Office Web Apps Server 及 Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
 ## 部署使用 HTTPS 的多伺服器、負載平衡 Office Web Apps Server 伺服器陣列
+<a name="multihttps"> </a>
 
 如果您預期會有許多流量流進 Office Web Apps Server 伺服器陣列，而且想要在網際網路和內部網路上提供該伺服器陣列，則可以使用這類型的拓撲。本節顯示如何安裝使用負載平衡器與 HTTPS 的多伺服器 Office Web Apps Server 伺服器陣列。如果有興趣，可[閱讀關於此拓撲的詳細資訊](plan-office-web-apps-server.md)。
 
@@ -375,7 +377,7 @@ default="true" ext="xls"/><action name="view"
 
   - **–EditingEnabled** 是選用項目，可在搭配 SharePoint 2013 使用時於 Office Web Apps 中啟用編輯功能。Lync Server 2013 不會使用此參數，因為這些主機不支援編輯功能。
 
-＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
+＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞中將說明其他用來設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
 
 如果您看到「500 Web 服務例外狀況」或「500.21 - 內部伺服器錯誤」訊息
 
@@ -385,7 +387,7 @@ default="true" ext="xls"/><action name="view"
 
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 
-需要這些參數的更多相關資訊嗎？您可以在＜[New-OfficeWebAppsMachine](new-officewebappsmachine.md)＞中找到這些參數。
+需要這些參數的更多相關資訊嗎？您可以在＜[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)＞中找到這些參數。
 
 ## 步驟 3：驗證已成功建立 Office Web Apps Server 伺服器陣列
 
@@ -426,9 +428,12 @@ default="true" ext="xls"/><action name="view"
 
 **若是 Windows Server 2008 R2**
 
+```
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
-
+```
+```
     iisreset /restart /noforce
+```
 
 **若是 Windows Server 2012 或 Windows Server 2012 R2**
 
@@ -437,8 +442,8 @@ default="true" ext="xls"/><action name="view"
 ## 另請參閱
 
 
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
 
 
 [Office Web Apps Server 的內容藍圖](content-roadmap-for-office-web-apps-server.md)  
