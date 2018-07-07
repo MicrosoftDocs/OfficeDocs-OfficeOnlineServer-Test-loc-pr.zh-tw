@@ -1,4 +1,4 @@
-﻿---
+---
 title: 規劃 Office Web Apps Server
 TOCTitle: 規劃 Office Web Apps Server
 ms:assetid: 2e147f11-6f47-46bc-90bf-b2f179958d11
