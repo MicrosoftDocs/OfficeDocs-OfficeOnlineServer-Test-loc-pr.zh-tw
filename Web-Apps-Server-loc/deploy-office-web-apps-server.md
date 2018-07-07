@@ -1,4 +1,4 @@
-﻿---
+---
 title: 部署 Office Web Apps Server
 TOCTitle: 部署 Office Web Apps Server
 ms:assetid: e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5
@@ -428,9 +428,12 @@ default="true" ext="xls"/><action name="view"
 
 **若是 Windows Server 2008 R2**
 
+```
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
-
+```
+```
     iisreset /restart /noforce
+```
 
 **若是 Windows Server 2012 或 Windows Server 2012 R2**
 
