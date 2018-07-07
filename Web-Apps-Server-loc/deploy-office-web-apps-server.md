@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps Server_
+_**適用版本：** Office Web Apps Server_
 
-_**上次修改主題的時間：**2017-10-05_
+_**上次修改主題的時間：** 2017-10-05_
 
-**摘要：**說明如何部署 Office Web Apps Server 內部部署，以供 SharePoint 2013 及 Lync Server 2013使用。
+**摘要：** 說明如何部署 Office Web Apps Server 內部部署，以供 SharePoint 2013 及 Lync Server 2013使用。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 請注意，本文涵蓋為貴公司安裝 Office Web Apps Server。如果您要尋找 Office 或 Office Web Apps 的個人複本的說明，請參閱 <https://support.office.com>。
 
@@ -295,7 +295,7 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
 **參數**
 
-  - **–InternalURL** 是執行 Office Web Apps Server 之伺服器的完整網域名稱 (FQDN)，例如 **http://servername.contoso.com**。
+  - **–InternalURL** 是執行 Office Web Apps Server 之伺服器的完整網域名稱 (FQDN)，例如 **http://servername.contoso.com** 。
 
   - **–ExternalURL** 是可從網際網路上存取的 FQDN。
 
@@ -369,7 +369,7 @@ default="true" ext="xls"/><action name="view"
 
 **參數**
 
-  - **–InternalURL** 是執行 Office Web Apps Server 之伺服器的完整網域名稱 (FQDN)，例如 **http://servername.contoso.com**。
+  - **–InternalURL** 是執行 Office Web Apps Server 之伺服器的完整網域名稱 (FQDN)，例如 **http://servername.contoso.com** 。
 
   - **–ExternalURL** 是可從網際網路上存取的 FQDN 名稱。
 

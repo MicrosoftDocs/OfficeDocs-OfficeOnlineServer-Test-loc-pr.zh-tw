@@ -13,13 +13,13 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Office Web Apps Server_
+_**適用版本：** Office Web Apps Server_
 
-_**上次修改主題的時間：**2017-10-10_
+_**上次修改主題的時間：** 2017-10-10_
 
 **摘要：** 描述 Office Web Apps Server 需求和先決條件，包括 HTTPS、憑證、虛擬化、負載平衡、拓撲及安全性。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 Office Web Apps Server 在內部部署環境中提供瀏覽器型版本的 Office 應用程式，讓使用者更有彈性和共同作業機會。本文說明在您的組織中安裝 Office Web Apps Server 的需求和所需採取的步驟。
 
@@ -452,7 +452,7 @@ Office Web Apps Server 使用的憑證必須符合下列需求：
 
 您可以在 [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (適用於新的伺服器陣列) 或 [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (適用於現有的伺服器陣列) 中使用下列 Windows PowerShell 參數，設定線上檢視程式。
 
-  - **OpenFromUrlEnabled：**開啟或關閉線上檢視程式。此參數可以為具有 URL 和 UNC 路徑的檔案，控制線上檢視程式。根據預設，當您建立新的 Office Web Apps Server 伺服器陣列時，此參數會設為 False (停用)。
+  - **OpenFromUrlEnabled：** 開啟或關閉線上檢視程式。此參數可以為具有 URL 和 UNC 路徑的檔案，控制線上檢視程式。根據預設，當您建立新的 Office Web Apps Server 伺服器陣列時，此參數會設為 False (停用)。
 
   - **OpenFromUncEnabled**   當線上檢視程式開啟時 (使用 OpenFromUrlEnabled 設為 True)，此參數會開啟或關閉線上檢視程式顯示 UNC 路徑中檔案的功能。根據預設，此參數設為 True，但是在您允許從 UNC 路徑開啟檔案之前，請確定 OpenFromUrlEnabled 也設為 True。如前所述，如果您已設定 Office Web Apps Server 連接至網際網路，建議您將此參數設為 False。
 
