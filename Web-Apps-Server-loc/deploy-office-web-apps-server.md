@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# 部署 Office Web Apps Server
+# 部署 Office Web Apps Server 
 
- 
+**適用版本：** Office Web Apps Server
 
-_**適用版本：** Office Web Apps Server_
-
-_**上次修改主題的時間：** 2017-10-05_
+**上次修改主題的時間：** 2017-10-05
 
 **摘要：** 說明如何部署 Office Web Apps Server 內部部署，以供 SharePoint 2013 及 Lync Server 2013使用。
 
@@ -93,11 +91,15 @@ Windows Server 2008 R2、Windows Server 2012 與 Windows Server 2012 R2 的必�
 
 2.  以系統管理員身分開啟 Windows PowerShell 提示，並執行下列命令以安裝必要的角色和服務。
     
+    ```PowerShell
         Import-Module ServerManager
+    ```
     
     然後，執行此命令：
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-WebServer,Web-Common-Http,Web-Static-Content,Web-App-Dev,Web-Asp-Net,Web-Net-Ext,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,Web-Security,Web-Windows-Auth,Web-Filtering,Web-Stat-Compression,Web-Dyn-Compression,Web-Mgmt-Console,Ink-Handwriting,IH-Ink-Support,NET-Framework,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-Win-CFAC
+    ```
     
     依照系統提示來重新啟動伺服器。
 
@@ -105,7 +107,9 @@ Windows Server 2008 R2、Windows Server 2012 與 Windows Server 2012 R2 的必�
 
 1.  以系統管理員身分開啟 Windows PowerShell 提示，並執行此命令以安裝必要的角色及服務。
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     依照系統提示來重新啟動伺服器。
 
@@ -117,7 +121,9 @@ Windows Server 2008 R2、Windows Server 2012 與 Windows Server 2012 R2 的必�
 
 2.  以系統管理員身分開啟 Windows PowerShell 提示，並執行此命令以安裝必要的角色及服務。
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     依照系統提示來重新啟動伺服器。
 
@@ -241,7 +247,9 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
 使用 **New-OfficeWebAppsFarm** 命令建立含有單一伺服器的新 Office Web Apps Server 伺服器陣列，如下列範例所示。
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp -EditingEnabled
+```
 
 **參數**
 
@@ -259,10 +267,13 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
 建立伺服器陣列之後，Windows PowerShell 提示中會顯示伺服器陣列的詳細資料。若要驗證已正確安裝及設定 Office Web Apps Server，請使用網頁瀏覽器來存取 Office Web Apps Server 搜索 URL，如下列範例所示。搜索 URL 是您在設定 Office Web Apps Server 伺服器陣列時指定的 *InternalUrl* 參數，後面接 **/hosting/discovery**，例如：
 
+```
     http://servername/hosting/discovery
+```
 
 如果 Office Web Apps Server 如預期正常運作，您應該會在網頁瀏覽器中看到 Web 應用程式開放式平台介面通訊協定 (WOPI) 搜索 XML 檔案。該檔案的前幾行應該會像下列範例一樣。
 
+```XML
     <?xml version="1.0" encoding="utf-8" ?> 
     - <wopi-discovery>
     - <net-zone name="internal-http">
@@ -270,7 +281,8 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
     <action name="view" ext="ods" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xls" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsb" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
-    <action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+    <action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" />
+``` 
 
 ## 步驟 3：設定主機
 
@@ -291,7 +303,9 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
 使用 **New-OfficeWebAppsFarm** 命令建立含有單一伺服器的新 Office Web Apps Server 伺服器陣列，如下列範例所示。
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate" -EditingEnabled
+```
 
 **參數**
 
@@ -311,11 +325,13 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
 建立伺服器陣列之後，Windows PowerShell 提示中會顯示伺服器陣列的詳細資料。若要驗證已正確安裝及設定 Office Web Apps Server，請使用網頁瀏覽器來存取 Office Web Apps Server 搜索 URL，如下列範例所示。搜索 URL 是您在設定 Office Web Apps Server 伺服器陣列時指定的 *InternalUrl* 參數，後面接 **/hosting/discovery**，例如：
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 如果 Office Web Apps Server 如預期正常運作，您應該會在網頁瀏覽器中看到 Web 應用程式開放式平台介面通訊協定 (WOPI) 搜索 XML 檔案。該檔案的前幾行應該會像下列範例一樣：
 
-``` 
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <wopi-discovery><net-zone 
 name="internal-https"><app name="Excel" checkLicense="true" 
@@ -324,8 +340,7 @@ name="view"
 urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
 default="true" ext="ods"/><action name="view" 
 urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
-default="true" ext="xls"/><action name="view"
- 
+default="true" ext="xls"/><action name="view" 
 ```
 
 <table>
@@ -365,7 +380,9 @@ default="true" ext="xls"/><action name="view"
 
 在第一部伺服器上使用 **New-OfficeWebAppsFarm** 命令，建立新的 Office Web Apps Server 伺服器陣列，如下列範例所示。
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -SSLOffloaded -EditingEnabled
+```
 
 **參數**
 
@@ -385,7 +402,9 @@ default="true" ext="xls"/><action name="view"
 
 第一部伺服器執行 Office Web Apps Server 之後，請在每部您要新增至 Office Web Apps Server 伺服器陣列的伺服器上執行 **New-OfficeWebAppsMachine** 命令。對於 **–MachineToJoin** 參數，請使用 Office Web Apps Server 伺服器陣列中已有之伺服器的電腦名稱。例如，如果伺服器陣列中已有 server1.contoso.com，請使用：
 
+```PowerShell
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+```
 
 需要這些參數的更多相關資訊嗎？您可以在＜[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)＞中找到這些參數。
 
@@ -393,12 +412,16 @@ default="true" ext="xls"/><action name="view"
 
 建立伺服器陣列之後，Windows PowerShell 提示中會顯示伺服器陣列的詳細資料。若要驗證已正確安裝及設定 Office Web Apps Server，請使用網頁瀏覽器來存取 Office Web Apps Server 搜索 URL，如下列範例所示。搜索 URL 是您在設定 Office Web Apps Server 伺服器陣列時指定的 *InternalUrl* 參數，後面接 **/hosting/discovery**。例如：
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 如果 Office Web Apps Server 如預期正常運作，您應該會在網頁瀏覽器中看到 Web 應用程式開放式平台介面通訊協定 (WOPI) 搜索 XML 檔案。該檔案的前幾行應該會像下列範例一樣：
 
+```XML
     <?xml version="1.0" encoding="UTF-8"?>
     <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
+```
 
 <table>
 <thead>
@@ -428,16 +451,17 @@ default="true" ext="xls"/><action name="view"
 
 **若是 Windows Server 2008 R2**
 
-```
+```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
-```
-```
+
     iisreset /restart /noforce
 ```
 
 **若是 Windows Server 2012 或 Windows Server 2012 R2**
 
+```PowerShell
     dism /online /enable-feature /featurename:IIS-ASPNET45
+```
 
 ## 另請參閱
 

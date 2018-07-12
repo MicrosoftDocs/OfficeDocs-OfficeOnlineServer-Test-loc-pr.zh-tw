@@ -10,16 +10,15 @@ ms.translationtype: HT
 ---
 
 # 設定 Office Web Apps for SharePoint 2013
-
  
 
-_**適用版本：**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
 
-_**上次修改主題的時間：**2016-12-16_
+**上次修改主題的時間：** 2016-12-16
 
-**摘要：**說明如何設定 SharePoint 2013 使用 Office Web Apps。
+**摘要：** 說明如何設定 SharePoint 2013 使用 Office Web Apps。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 本文接續＜[部署 Office Web Apps Server](deploy-office-web-apps-server.md)＞的內容。在該文中，您設定了執行 Office Web Apps Server 的伺服器。在本文中，您將設定 SharePoint 2013 來使用 Office Web Apps Server。首先，您需要從 SharePoint 2013 執行一些 Windows PowerShell Cmdlet，之後，使用者便可以使用瀏覽器開啟 SharePoint 2013 文件庫中的 Office 檔案。
 
@@ -79,7 +78,9 @@ _**上次修改主題的時間：**2016-12-16_
 
 執行下列命令，其中 \<WacServerName\> 是您為內部 URL 設定之 URL 的完整網域名稱 (FQDN)。這是 Office Web Apps Server 流量的進入點。就此測試環境而言，您需要指定 –AllowHTTP 參數，以允許 SharePoint 2013 使用 HTTP 接收來自 Office Web Apps Server 伺服器陣列的探索資訊。如果您未指定 -AllowHTTP，SharePoint 2013 將嘗試使用 HTTPS 來與 Office Web Apps Server 伺服器陣列通訊，而此命令將不會運作。
 
+```PowerShell
     New-SPWOPIBinding -ServerName <WacServerName> -AllowHTTP
+```
 
 執行此命令後，您應該會看見 Windows PowerShell 命令提示字元中顯示繫結清單。
 
@@ -89,7 +90,9 @@ _**上次修改主題的時間：**2016-12-16_
 
 Office Web Apps Server 使用區域來決定當與主機 (在此例中為 SharePoint 2013) 通訊時，要使用的 URL (內部或外部) 與通訊協定 (HTTP 或 HTTPS)。依預設，SharePoint Server 2013 會使用 **internal-https** 區域。請執行下列命令，看看您目前是在哪個區域。
 
+```PowerShell
     Get-SPWOPIZone
+```
 
 此命令所顯示的 WOPI 區域應該是 **internal-http**。如果顯示正確，請跳至步驟 5。否則，請參閱下一個步驟。
 
@@ -99,7 +102,9 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 如果在步驟 3 得到的結果為 **internal-https**，請執行下列命令將區域變更為 **internal-http**。您需要進行此項變更，因為 SharePoint 2013 的區域必須符合 Office Web Apps Server 伺服器陣列的區域。
 
+```PowerShell
     Set-SPWOPIZone -zone "internal-http"
+```
 
 重新執行 **Get-SPWOPIZone**，以確認新區域為 **internal-http**。
 
@@ -109,23 +114,25 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 若要在測試環境中透過 HTTP 搭配使用 Office Web Apps 與 SharePoint 2013，您需要將 AllowOAuthOverHttp 設定為 **True**，否則 Office Web Apps 將無法運作。您可以執行下列範例來檢查目前的狀態：
 
+```PowerShell
     (Get-SPSecurityTokenServiceConfig).AllowOAuthOverHttp
+```
 
 如果此命令傳回 **False**，請執行下列命令將此設為 **True**。
 
-```
+```PowerShell
     $config = (Get-SPSecurityTokenServiceConfig)
-```
-```
+
     $config.AllowOAuthOverHttp = $true
-```
-```
+
     $config.Update()
 ```
 
 再次執行下列命令，確認現在 AllowOAuthOverHttp 設定已設為**True**。
 
+```PowerShell
     (Get-SPSecurityTokenServiceConfig).AllowOAuthOverHttp
+```
 
 需要說明嗎？請參閱＜[Get-SPSecurityTokenServiceConfig](https://technet.microsoft.com/zh-tw/library/ff607642\(v=office.15\))＞。
 
@@ -161,7 +168,9 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 執行下列命令，其中 \<WacServerName\> 是您為內部 URL 設定之 URL 的完整網域名稱 (FQDN)。這是 Office Web Apps Server 流量的進入點。
 
+```PowerShell
     New-SPWOPIBinding -ServerName <WacServerName> 
+```
 
 需要說明嗎？請參閱＜[New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps)＞。
 
@@ -169,7 +178,9 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 Office Web Apps Server 使用區域來決定當與主機 (在此例中為 SharePoint 2013) 通訊時，要使用的 URL (內部或外部) 與通訊協定 (HTTP 或 HTTPS)。依預設，SharePoint Server 2013 會使用 **internal-https** 區域。請執行下列命令，確認此為目前的區域：
 
+```PowerShell
     Get-SPWOPIZone
+```
 
 請記下所顯示的 WOPI 區域。
 
@@ -181,7 +192,9 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 如果在步驟 3 得到的結果顯示 **internal-https** 且 SharePoint 伺服器陣列僅為內部用，您可以略過此步驟。如果您擁有內外兼用的 SharePoint 伺服器陣列，則需要執行下列命令，將區域變更為 **external-https**。
 
+```PowerShell
     Set-SPWOPIZone -zone "external-https"
+```
 
 需要說明嗎？請參閱＜[Set-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIZone?view=sharepoint-ps)＞。
 
@@ -213,7 +226,9 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 若要執行此動作，請在 SharePoint Server 上執行下列命令：
 
+```PowerShell
     Get-SPWopiZone 
+```
 
 結果會是下列其中一個：
 
@@ -227,7 +242,9 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 接著，在 SharePoint Server 執行下列命令。
 
+```PowerShell
     Get-SPWOPIBinding
+```
 
 在輸出中，尋找 **WopiZone: *zone***。如果得自 Get-SPWopiZone 的結果與 Get-SPWOPIBinding 傳回的區域不符，請在 SharePoint Server 上執行 **Set-SPWOPIZone -Zone** Cmdlet，將 WOPI 區域變更為符合得自 Get-SPWOPIBinding 的結果。如需這些 Cmdlet 的使用說明，請參閱＜[Get-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps)＞、＜[Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps)＞和＜[Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps)＞。
 
@@ -287,7 +304,9 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 如果有任何原因您想要中斷 SharePoint 2013 與 Office Web Apps Server 間的連線，請使用下列命令範例。
 
+```PowerShell
     Remove-SPWOPIBinding -All:$true
+```
 
 需要說明嗎？請參閱＜[Remove-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps)＞。
 
