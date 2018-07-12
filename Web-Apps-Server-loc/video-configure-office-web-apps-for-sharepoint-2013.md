@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
+**適用版本：** Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013
 
-_**上次修改主題的時間：**2016-12-16_
+**上次修改主題的時間：** 2016-12-16
 
-**摘要：**引導您逐步完成設定 Office Web Apps Server 伺服器陣列來使用 SharePoint 2013 的九個主要步驟。
+**摘要：** 引導您逐步完成設定 Office Web Apps Server 伺服器陣列來使用 SharePoint 2013 的九個主要步驟。
 
 為 SharePoint 2013 設定 Office Web Apps 是個相當簡單的程序。此影片顯示如何在測試環境中設定 Office Web Apps Server 並設定 SharePoint 2013 使用 Office Web Apps Server。
 

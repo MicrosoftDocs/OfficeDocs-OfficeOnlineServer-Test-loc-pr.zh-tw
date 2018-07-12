@@ -13,13 +13,13 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Office Web Apps Server_
+**適用版本：** Office Web Apps Server
 
-_**上次修改主題的時間：**2017-05-26_
+**上次修改主題的時間：** 2017-05-26
 
-**摘要：**了解 Office Web Apps Server，以及其如何為受支援的主機提供瀏覽器型 Office 功能。
+**摘要：** 了解 Office Web Apps Server，以及其如何為受支援的主機提供瀏覽器型 Office 功能。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 Office Web Apps Server是將瀏覽器型版本的Word、 PowerPoint、 Excel及OneNote新Office伺服器產品。單一 Office Web Apps Server 伺服器陣列可支援透過SharePoint 2013、 Lync Server 2013、 共用的資料夾及網站存取Office檔案的使用者。新的獨立部署模型表示您可以管理更新至 Office Web Apps Server 伺服器陣列獨立部署其他Office Server 產品在組織中。
 

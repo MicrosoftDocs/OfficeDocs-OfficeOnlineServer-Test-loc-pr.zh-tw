@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
+**適用版本：** Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：**2016-12-16_
+**上次修改主題的時間：** 2016-12-16
 
-**摘要：**包含協助您在最近更新的 Office Web Apps 架構中使用 Office Web Apps Server 的文章。
+**摘要：** 包含協助您在最近更新的 Office Web Apps 架構中使用 Office Web Apps Server 的文章。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 ![Office 2013 標誌](images/JJ219447.a106e261-2cd0-43b7-af77-92de7e4b6fb9(Office.15).png "Office 2013 標誌")使用下表中的文章，以瞭解 Office Web Apps Server 和 Office Web Apps 與 SharePoint 2013。
 
