@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**檢閱 Office Web Apps 搭配 SharePoint 2013 內部部署使用的規劃指引。
+**摘要：** 檢閱 Office Web Apps 搭配 SharePoint 2013 內部部署使用的規劃指引。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 若要規劃 Office Web Apps 與 SharePoint 2013 內部部署的搭配使用，應檢閱使用 Office Web Apps 來檢視及編輯 Office 檔案的瀏覽器支援、SharePoint 驗證需求和授權考量事項。然後，您就可以決定當使用者從 SharePoint 2013 文件庫開啟 Office 檔案時，要讓 SharePoint 2013 使用網頁瀏覽器還是用戶端應用程式。
 

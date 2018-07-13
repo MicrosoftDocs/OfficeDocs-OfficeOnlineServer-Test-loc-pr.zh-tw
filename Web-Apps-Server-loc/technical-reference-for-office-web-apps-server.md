@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps Server_
+_**適用版本：** Office Web Apps Server_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**包含技術參考文章的連結，例如 Office Web Apps Server 的 OfficeWebApps Windows PowerShell Cmdlet 的說明。
+**摘要：** 包含技術參考文章的連結，例如 Office Web Apps Server 的 OfficeWebApps Windows PowerShell Cmdlet 的說明。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 ![Office 2013 標誌](images/JJ219447.a106e261-2cd0-43b7-af77-92de7e4b6fb9(Office.15).png "Office 2013 標誌")Office Web Apps Server 是新的 Office 伺服器產品，提供瀏覽器型版本的 Word、PowerPoint、Excel 和 OneNote。單一 Office Web Apps Server 伺服器陣列可支援透過 SharePoint 2013、Lync Server 2013、Exchange Server 2013、共用資料夾和網站來存取 Office 檔案的使用者。下表列出並說明的技術參考文章，是專門提供給組織中部署 Office Web Apps Server 內部部署的 IT 專業人員。
 

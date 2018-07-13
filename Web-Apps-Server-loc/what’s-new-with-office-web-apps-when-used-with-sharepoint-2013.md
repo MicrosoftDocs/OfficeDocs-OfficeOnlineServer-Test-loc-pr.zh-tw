@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**說明 SharePoint 2013 使用者與系統管理員在使用 Office Web Apps 時可使用的新功能。
+**摘要：** 說明 SharePoint 2013 使用者與系統管理員在使用 Office Web Apps 時可使用的新功能。
 
 
 使用者如果處理 SharePoint 2013 內文件庫中的 Office 檔案，即可利用下表特地列出的一些新功能。
