@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**說明如何為 SharePoint 網站集合和文件庫中的 Office 文件設定預設開啟行為
+**摘要：** 說明如何為 SharePoint 網站集合和文件庫中的 Office 文件設定預設開啟行為
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 若要開啟 SharePoint 2013 文件庫中的文件，只要按一下文件的標題即可。接下來發生的情況 (在用戶端應用程式或瀏覽器中開啟檔案) 取決於多種因素，例如檔案類型、設定 Office Web Apps Server 伺服器陣列的方式，以及文件庫或網站集合的 OpenInClient 功能的設定方式。下列步驟顯示如何在將 SharePoint 2013 設定為使用 Office Web Apps Server 的 Office 上設定文件的預設開啟行為。
 
