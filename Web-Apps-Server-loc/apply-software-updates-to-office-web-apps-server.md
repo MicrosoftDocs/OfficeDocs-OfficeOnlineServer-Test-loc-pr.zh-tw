@@ -1,4 +1,4 @@
-﻿---
+---
 title: 套用軟體更新至 Office Web Apps Server
 TOCTitle: 套用軟體更新至 Office Web Apps Server
 ms:assetid: 5d15dbd9-374e-422a-a870-43270dd0a2db
@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps Server_
+_**適用版本：** Office Web Apps Server_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**說明如何套用軟體更新到 Office Web Apps Server 陣列。
+**摘要：** 說明如何套用軟體更新到 Office Web Apps Server 陣列。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 在新版 Office Web Apps Server 推出之後，Microsoft 提供了一系列的軟體更新來協助改善伺服器的安全性、效能和可靠性。本文說明如何套用軟體更新到 Office Web Apps Server Server 陣列中的個別伺服器。
 
@@ -46,7 +46,7 @@ _**上次修改主題的時間：**2016-12-16_
 </thead>
 <tbody>
 <tr class="odd">
-<td>Office Web Apps Server 不支援使用自動更新程序來套用 Office Web Apps Server 更新。這是因為 Office Web Apps Server 的更新必須以本文所述的特定方式套用。如果自動套用 Office Web Apps Server 更新，使用者可能無法在 Office Web Apps 檢視或編輯文件。如果發生此情況，您必須重建 Office Web Apps Server 伺服器陣列。若要重建伺服器陣列，您必須使用 <a href="remove-officewebappsmachine.md">Remove-OfficeWebAppsMachine</a> 從伺服器陣列中移除 Office Web Apps Server、使用 [新增或移除程式] 解除安裝 Office Web Apps Server，然後依照＜<a href="deploy-office-web-apps-server.md">部署 Office Web Apps Server</a>＞中所述的步驟重新安裝 Office Web Apps Server。在重新安裝之後，再依照本文章所述的步驟套用更新。<br />
+<td>Office Web Apps Server 不支援使用自動更新程序來套用 Office Web Apps Server 更新。這是因為 Office Web Apps Server 的更新必須以本文所述的特定方式套用。如果自動套用 Office Web Apps Server 更新，使用者可能無法在 Office Web Apps 檢視或編輯文件。如果發生此情況，您必須重建 Office Web Apps Server 伺服器陣列。若要重建伺服器陣列，您必須使用 <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a> 從伺服器陣列中移除 Office Web Apps Server、使用 [新增或移除程式] 解除安裝 Office Web Apps Server，然後依照＜<a href="deploy-office-web-apps-server.md">部署 Office Web Apps Server</a>＞中所述的步驟重新安裝 Office Web Apps Server。在重新安裝之後，再依照本文章所述的步驟套用更新。<br />
 請務必檢閱＜<a href="plan-office-web-apps-server.md">規劃 Office Web Apps Server 更新</a>＞中的方針，建立 Office Web Apps Server 伺服器陣列的更新程序。</td>
 </tr>
 </tbody>
@@ -59,7 +59,7 @@ _**上次修改主題的時間：**2016-12-16_
 
 針對 Office Web Apps Server 發行的更新將會更新 Office Web Apps Server 及任何已安裝的 Office Web Apps Server 語言套件。沒有專為 Office Web Apps Server 語言套件而設的個別更新。
 
-在升級過程中，您將必須重建 Office Web Apps Server伺服器陣列。要準備重建 Office Web Apps Server 伺服器陣列時，檢閱您目前的 Office Web Apps Server 伺服器陣列內容，方法是執行 Windows PowerShell Cmdlet **Get-OfficeWebAppsFarm** 並檢閱 [New-OfficeWebAppsFarm](new-officewebappsfarm.md) 的參數。您用於 **New-OfficeWebAppsFarm** 的參數，應該與您第一次設定 Office Web Apps Server 伺服器陣列時使用的參數相同。
+在升級過程中，您將必須重建 Office Web Apps Server伺服器陣列。要準備重建 Office Web Apps Server 伺服器陣列時，檢閱您目前的 Office Web Apps Server 伺服器陣列內容，方法是執行 Windows PowerShell Cmdlet **Get-OfficeWebAppsFarm** 並檢閱 [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) 的參數。您用於 **New-OfficeWebAppsFarm** 的參數，應該與您第一次設定 Office Web Apps Server 伺服器陣列時使用的參數相同。
 
 <table>
 <colgroup>
@@ -96,13 +96,13 @@ _**上次修改主題的時間：**2016-12-16_
 
 3.  在該伺服器上安裝 Office Web Apps Server 更新。如果出現提示，請重新啟動伺服器。
 
-4.  以系統管理員身分開啟 Windows PowerShell 提示字元，並執行 **New-OfficeWebAppsFarm** Cmdlet 來重建 Office Web Apps Server 伺服器陣列。您為 **–InternalURL** 指定的 URL，是執行 Office Web Apps Server 的伺服器名稱，例如 **http://Contoso-WAC**。在此情況下，您會使用先前的 Office Web Apps Server 伺服器陣列所使用的相同名稱。請使用您第一次建立 Office Web Apps Server 伺服器陣列時所使用的相同額外參數。例如，**–AllowHttp** 參數會將伺服器陣列設定為使用 HTTP，而 **–EditingEnabled** 參數在與 SharePoint 2013 搭配使用時，則可啟用在 Office Web Apps 中進行編輯。Lync Server 2013 或 Exchange Server 2013 不使用 **–EditingEnabled** 參數，因為那些主機不支援編輯。
+4.  以系統管理員身分開啟 Windows PowerShell 提示字元，並執行 **New-OfficeWebAppsFarm** Cmdlet 來重建 Office Web Apps Server 伺服器陣列。您為 **–InternalURL** 指定的 URL，是執行 Office Web Apps Server 的伺服器名稱，例如 **http://Contoso-WAC** 。在此情況下，您會使用先前的 Office Web Apps Server 伺服器陣列所使用的相同名稱。請使用您第一次建立 Office Web Apps Server 伺服器陣列時所使用的相同額外參數。例如，**–AllowHttp** 參數會將伺服器陣列設定為使用 HTTP，而 **–EditingEnabled** 參數在與 SharePoint 2013 搭配使用時，則可啟用在 Office Web Apps 中進行編輯。Lync Server 2013 或 Exchange Server 2013 不使用 **–EditingEnabled** 參數，因為那些主機不支援編輯。
     
     下列範例中的程式碼會建立新的 Office Web Apps Server 伺服器陣列，名為 http://Contoso-WAC。
     
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
     
-    ＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞中將說明其他可設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
+    ＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞中將說明其他可設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
 
 ## 套用軟體更新至多 Office Web Apps Server 伺服器陣列
 
@@ -126,7 +126,7 @@ _**上次修改主題的時間：**2016-12-16_
     
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
     
-    ＜[New-OfficeWebAppsFarm](new-officewebappsfarm.md)＞中將說明其他可設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
+    ＜[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)＞中將說明其他可設定翻譯服務、Proxy 伺服器、美工圖案支援與線上檢視程式的參數。
 
 6.  視 Office Web Apps Server 伺服器陣列有多少台伺服器而定，將流量負載平衡到新的伺服器陣列。您可以將此步驟延到在伺服器陣列中加入了更多更新過的伺服器後再執行。
 
@@ -143,10 +143,10 @@ _**上次修改主題的時間：**2016-12-16_
 ## 另請參閱
 
 
-[Remove-OfficeWebAppsMachine](remove-officewebappsmachine.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[Get-OfficeWebAppsFarm](get-officewebappsfarm.md)  
+[Remove-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[Get-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappsfarm?view=officewebapps-ps)  
 
 
 [Office Web Apps Server 的內容藍圖](content-roadmap-for-office-web-apps-server.md)  

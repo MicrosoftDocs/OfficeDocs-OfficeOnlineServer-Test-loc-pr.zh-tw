@@ -1,4 +1,4 @@
-﻿---
+---
 title: 設定 Office Web Apps for SharePoint 2013
 TOCTitle: 設定 Office Web Apps for SharePoint 2013
 ms:assetid: a5276781-133b-413c-beca-b851e17c2081
@@ -83,7 +83,7 @@ _**上次修改主題的時間：**2016-12-16_
 
 執行此命令後，您應該會看見 Windows PowerShell 命令提示字元中顯示繫結清單。
 
-需要說明嗎？請參閱＜[New-SPWOPIBinding](new-spwopibinding.md)＞。
+需要說明嗎？請參閱＜[New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps)＞。
 
 ## 步驟 3：檢視 SharePoint 繫結的 WOPI 區域
 
@@ -93,7 +93,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 此命令所顯示的 WOPI 區域應該是 **internal-http**。如果顯示正確，請跳至步驟 5。否則，請參閱下一個步驟。
 
-需要說明嗎？請參閱＜[Get-SPWOPIZone](get-spwopizone.md)＞。
+需要說明嗎？請參閱＜[Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps)＞。
 
 ## 步驟 4：將 WOPI 區域變更為 internal-http
 
@@ -103,7 +103,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 重新執行 **Get-SPWOPIZone**，以確認新區域為 **internal-http**。
 
-需要說明嗎？請參閱＜[Set-SPWOPIZone](set-spwopizone.md)＞與＜[Get-SPWOPIZone](get-spwopizone.md)＞。
+需要說明嗎？請參閱＜[Set-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIZone?view=sharepoint-ps)＞與＜[Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps)＞。
 
 ## 步驟 5：將 SharePoint 2013 中的 AllowOAuthOverHttp 設定變更為 True
 
@@ -113,11 +113,15 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 如果此命令傳回 **False**，請執行下列命令將此設為 **True**。
 
+```
     $config = (Get-SPSecurityTokenServiceConfig)
-
+```
+```
     $config.AllowOAuthOverHttp = $true
-
+```
+```
     $config.Update()
+```
 
 再次執行下列命令，確認現在 AllowOAuthOverHttp 設定已設為**True**。
 
@@ -133,7 +137,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 ## 在使用 HTTPS 的實際執行環境
 
-在開始進行下列程序前，請確定您已按照＜[部署使用 HTTPS 的單一伺服器 Office Web Apps Server 陣列](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#singlehttps)＞或＜[部署使用 HTTPS 的多伺服器、負載平衡 Office Web Apps Server 伺服器陣列](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#multihttps)＞中的步驟設定 Office Web Apps Server。
+在開始進行下列程序前，請確定您已按照＜[部署使用 HTTPS 的單一伺服器 Office Web Apps Server 陣列](deploy-office-web-apps-server.md#singlehttps)＞或＜[部署使用 HTTPS 的多伺服器、負載平衡 Office Web Apps Server 伺服器陣列](deploy-office-web-apps-server.md#multihttps)＞中的步驟設定 Office Web Apps Server。
 
 ## 步驟 1：開啟 SharePoint 2013 管理命令介面
 
@@ -159,7 +163,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
     New-SPWOPIBinding -ServerName <WacServerName> 
 
-需要說明嗎？請參閱＜[New-SPWOPIBinding](new-spwopibinding.md)＞。
+需要說明嗎？請參閱＜[New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps)＞。
 
 ## 步驟 3：檢視 SharePoint 2013 的 WOPI 區域
 
@@ -169,7 +173,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 請記下所顯示的 WOPI 區域。
 
-需要說明嗎？請參閱＜[Get-SPWOPIZone](get-spwopizone.md)＞。
+需要說明嗎？請參閱＜[Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps)＞。
 
 ## 步驟 4：視需要變更 WOPI 區域
 
@@ -179,7 +183,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
     Set-SPWOPIZone -zone "external-https"
 
-需要說明嗎？請參閱＜[Set-SPWOPIZone](set-spwopizone.md)＞。
+需要說明嗎？請參閱＜[Set-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIZone?view=sharepoint-ps)＞。
 
 ## 步驟 5：確認 Office Web Apps 正常運作
 
@@ -225,7 +229,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
     Get-SPWOPIBinding
 
-在輸出中，尋找 **WopiZone: *zone***。如果得自 Get-SPWopiZone 的結果與 Get-SPWOPIBinding 傳回的區域不符，請在 SharePoint Server 上執行 **Set-SPWOPIZone -Zone** Cmdlet，將 WOPI 區域變更為符合得自 Get-SPWOPIBinding 的結果。如需這些 Cmdlet 的使用說明，請參閱＜[Get-SPWOPIBinding](get-spwopibinding.md)＞、＜[Set-SPWOPIBinding](set-spwopibinding.md)＞和＜[Get-SPWOPIZone](get-spwopizone.md)＞。
+在輸出中，尋找 **WopiZone: *zone***。如果得自 Get-SPWopiZone 的結果與 Get-SPWOPIBinding 傳回的區域不符，請在 SharePoint Server 上執行 **Set-SPWOPIZone -Zone** Cmdlet，將 WOPI 區域變更為符合得自 Get-SPWOPIBinding 的結果。如需這些 Cmdlet 的使用說明，請參閱＜[Get-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps)＞、＜[Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps)＞和＜[Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps)＞。
 
 ## 問題：嘗試在 Office Web Apps 中編輯 Office 文件時，收到「很抱歉，無法開啟文件進行編輯」錯誤。
 
@@ -239,7 +243,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 如果您在使用 HTTP 的測試環境中設定 Office Web Apps，請務必依照＜步驟 5：將 SharePoint 2013 中的 AllowOAuthOverHttp 設定變更為 True＞中的說明，將 AllowOAuthOverHttp 設定為 **True**。
 
-如果您已使用 [New-OfficeWebAppsHost](new-officewebappshost.md) Cmdlet 將網域新增至 \[允許清單\]，請確定您是從 \[允許清單\] 中的主機網域存取 Office Web Apps。若要檢視 \[允許清單\] 中的主機網域，請在 Office Web Apps Server 上以系統管理員身分開啟 Windows PowerShell 提示，然後執行 [Get-OfficeWebAppsHost](get-officewebappshost.md) Cmdlet。若要將網域新增至 \[允許清單\]，請使用 [New-OfficeWebAppsHost](new-officewebappshost.md) Cmdlet。
+如果您已使用 [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps) Cmdlet 將網域新增至 \[允許清單\]，請確定您是從 \[允許清單\] 中的主機網域存取 Office Web Apps。若要檢視 \[允許清單\] 中的主機網域，請在 Office Web Apps Server 上以系統管理員身分開啟 Windows PowerShell 提示，然後執行 [Get-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappshost?view=officewebapps-ps) Cmdlet。若要將網域新增至 \[允許清單\]，請使用 [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps) Cmdlet。
 
 ## 問題：嘗試在 Office Web Apps 中檢視 Office 文件時，收到「抱歉，Word Web App 無法開啟這份文件，因為服務目前忙碌中。請稍後再試」錯誤。
 
@@ -277,7 +281,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 6.  將活頁簿重新上傳至 SharePoint 文件庫。
 
-若要讓使用者在瀏覽器視窗中與包含資料模型或 Power View 檢視的活頁簿互動，請在 SharePoint Server 中設定 Excel Services 來顯示活頁簿。這需要 SharePoint 系統管理員在安裝 SharePoint Server 的伺服器上執行 New-SPWOPISupressionSetting Cmdlet。如需詳細資訊，請參閱 [New-SPWOPISuppressionSetting](new-spwopisuppressionsetting.md) 和[在 SharePoint Server 2013 中管理 Excel Services](https://technet.microsoft.com/zh-tw/library/ee681487\(v=office.15\))。
+若要讓使用者在瀏覽器視窗中與包含資料模型或 Power View 檢視的活頁簿互動，請在 SharePoint Server 中設定 Excel Services 來顯示活頁簿。這需要 SharePoint 系統管理員在安裝 SharePoint Server 的伺服器上執行 New-SPWOPISupressionSetting Cmdlet。如需詳細資訊，請參閱 [New-SPWOPISuppressionSetting](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps) 和[在 SharePoint Server 2013 中管理 Excel Services](https://technet.microsoft.com/zh-tw/library/ee681487\(v=office.15\))。
 
 ## 中斷 SharePoint 2013 與 Office Web Apps Server 間的連線
 
@@ -285,13 +289,13 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
     Remove-SPWOPIBinding -All:$true
 
-需要說明嗎？請參閱＜[Remove-SPWOPIBinding](remove-spwopibinding.md)＞。
+需要說明嗎？請參閱＜[Remove-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps)＞。
 
 ## 另請參閱
 
 
-[New-SPWOPIBinding](new-spwopibinding.md)  
-[Set-SPWOPIZone](set-spwopizone.md)  
+[New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps)  
+[Set-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIZone?view=sharepoint-ps)  
 
 
 [Office Web Apps Server 的內容藍圖](content-roadmap-for-office-web-apps-server.md)  

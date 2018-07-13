@@ -78,7 +78,7 @@ Office Web Apps 的瀏覽器支援與 SharePoint 2013 相同。如需詳細資�
 
 您可以設定要在用戶端應用程式 (若有安裝的話) 還是在瀏覽器中開啟 Word、PowerPoint、Excel 和 OneNote 檔案。根據預設，將 SharePoint 2013 設定為使用 Office Web Apps Server 之後，就會在瀏覽器中開啟 Office 檔案。有兩種方法可以變更此預設行為，以允許用戶端應用程式直接開啟檔案：
 
-  - **若是 SharePoint 2013 伺服器陣列** 您可以使用 [New-SPWOPIBinding](new-spwopibinding.md) 和 [Set-SPWOPIBinding](set-spwopibinding.md)Windows PowerShell Cmdlet，依照每個檔案類型為 SharePoint 2013 伺服器陣列調整預設開啟行為。
+  - **若是 SharePoint 2013 伺服器陣列** 您可以使用 [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) 和 [Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps)Windows PowerShell Cmdlet，依照每個檔案類型為 SharePoint 2013 伺服器陣列調整預設開啟行為。
 
   - **在網站集合或文件庫上** 網站集合管理員和使用者可以指定是否要在用戶端應用程式 (若已安裝) 上開啟 Office 檔案。使用者可以在文件庫屬性中變更此設定，而網站集合管理員可以在網站集合管理中變更此設定，或是使用 Install-SPFeature Cmdlet 來安裝 OpenInClient 功能。如需詳細資訊，請參閱＜[Install-SPFeature](https://technet.microsoft.com/zh-tw/library/ff607825\(v=office.15\))＞。
 

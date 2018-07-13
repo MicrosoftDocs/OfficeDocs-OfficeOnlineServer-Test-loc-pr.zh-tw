@@ -13,13 +13,13 @@ ms.translationtype: MT
 
  
 
-_**適用版本：**Office Web Apps Server_
+_**適用版本：** Office Web Apps Server_
 
-_**上次修改主題的時間：**2017-10-10_
+_**上次修改主題的時間：** 2017-10-10_
 
 **摘要：** 描述 Office Web Apps Server 需求和先決條件，包括 HTTPS、憑證、虛擬化、負載平衡、拓撲及安全性。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 Office Web Apps Server 在內部部署環境中提供瀏覽器型版本的 Office 應用程式，讓使用者更有彈性和共同作業機會。本文說明在您的組織中安裝 Office Web Apps Server 的需求和所需採取的步驟。
 
@@ -348,7 +348,7 @@ Office Web Apps Server 2013 語言套件可讓使用者從 SharePoint 2013 文�
 
   - **規劃傳入和傳出的通訊。** 在網際網路對向部署中，透過 NAT 裝置路由傳送所有傳出的通訊。在多伺服器陣列中，使用負載平衡器處理所有傳入的通訊。
 
-  - **確定 Office Web Apps Server 伺服器陣列中的所有伺服器都加入網域，成為相同組織單位 (OU) 的一部分。**使用 [New-OfficeWebAppsFarm](new-officewebappsfarm.md) Cmdlet 中的 **FarmOU** 參數，防止不在此 OU 中的其他伺服器加入伺服器陣列。
+  - **確定 Office Web Apps Server 伺服器陣列中的所有伺服器都加入網域，成為相同組織單位 (OU) 的一部分。**使用 [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) Cmdlet 中的 **FarmOU** 參數，防止不在此 OU 中的其他伺服器加入伺服器陣列。
 
   - **針對所有傳入的要求使用超文字安全傳輸通訊協定 (HTTPS)。**
 
@@ -414,13 +414,13 @@ Office Web Apps Server 使用的憑證必須符合下列需求：
 
 ## 依據 OU 成員資格，限制哪些伺服器可以加入 Office Web Apps Server 伺服器陣列
 
-您可以為這些伺服器建立組織單位，然後在建立伺服器陣列時指定 FarmOU 參數，以防止未經授權的伺服器加入 Office Web Apps Server 伺服器陣列。如需 FarmOU 參數的詳細資訊，請參閱 [New-OfficeWebAppsFarm](new-officewebappsfarm.md)。
+您可以為這些伺服器建立組織單位，然後在建立伺服器陣列時指定 FarmOU 參數，以防止未經授權的伺服器加入 Office Web Apps Server 伺服器陣列。如需 FarmOU 參數的詳細資訊，請參閱 [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)。
 
 ## 使用允許清單限制 Office Web Apps Server 的主機存取
 
 允許清單是一種安全性功能，可防止不想要的主機連接至 Office Web Apps Server 伺服器陣列，並且還在未經您同意的情況下，使用伺服器陣列來進行檔案作業。將包含核准主機的網域新增至允許清單，即可限制 Office Web Apps Server 允許檔案作業要求 (例如檔案擷取、中繼資料擷取和檔案變更) 的主機。
 
-您可以在建立 Office Web Apps Server 伺服器陣列之後，再將網域新增至允許清單。若要瞭解如何新增網域至允許清單，請參閱 [New-OfficeWebAppsHost](new-officewebappshost.md)。
+您可以在建立 Office Web Apps Server 伺服器陣列之後，再將網域新增至允許清單。若要瞭解如何新增網域至允許清單，請參閱 [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps)。
 
 <table>
 <thead>
@@ -438,21 +438,21 @@ Office Web Apps Server 使用的憑證必須符合下列需求：
 
 ## 規劃 Office Web Apps Server 的線上檢視程式
 
-根據預設，在您安裝 Office Web Apps Server 之後，就會啟用線上檢視程式功能。如果您計劃要在組織中使用線上檢視程式，請檢閱下列指引。在某些情況下，您可能會想要停用線上檢視程式中的部分功能。這些指引是參照使用 Windows PowerShell Cmdlet [New-OfficeWebAppsFarm](new-officewebappsfarm.md) 及 [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) 設定的參數。
+根據預設，在您安裝 Office Web Apps Server 之後，就會啟用線上檢視程式功能。如果您計劃要在組織中使用線上檢視程式，請檢閱下列指引。在某些情況下，您可能會想要停用線上檢視程式中的部分功能。這些指引是參照使用 Windows PowerShell Cmdlet [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) 及 [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) 設定的參數。
 
 ## 線上檢視程式的安全性考量
 
 檔案若要使用線上檢視程式透過網頁瀏覽器來檢視，絕不能要求驗證。換句話說，檔案必須可以公開使用，因為線上檢視程式在擷取檔案時，不能執行驗證。強烈建議您用於線上檢視程式的 Office Web Apps Server 伺服器陣列只能於內部網路或網際網路擇一存取，但不要都能存取。這是因為 Office Web Apps Server 無法分別內部網路和網際網路 URL 的要求。這樣網際網路上的某人就可要求內部 URL 來檢視內部文件，因此造成安全性漏洞。
 
-基於同樣的理由，如果您將 Office Web Apps Server 設定為只連接至網際網路，強烈建議您停用線上檢視程式中的 UNC 支援。若要停用 UNC 支援，請使用 Windows PowerShell Cmdlet [New-OfficeWebAppsFarm](new-officewebappsfarm.md) (適用於新的伺服器陣列) 或 [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (適用於現有的伺服器陣列)，將 OpenFromUncEnabled 參數設為 False。
+基於同樣的理由，如果您將 Office Web Apps Server 設定為只連接至網際網路，強烈建議您停用線上檢視程式中的 UNC 支援。若要停用 UNC 支援，請使用 Windows PowerShell Cmdlet [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (適用於新的伺服器陣列) 或 [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (適用於現有的伺服器陣列)，將 OpenFromUncEnabled 參數設為 False。
 
 另外為預防安全性問題，線上檢視程式限制為只能檢視 10 MB 以下的 Office 檔案。
 
 ## 線上檢視程式的設定選項
 
-您可以在 [New-OfficeWebAppsFarm](new-officewebappsfarm.md) (適用於新的伺服器陣列) 或 [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (適用於現有的伺服器陣列) 中使用下列 Windows PowerShell 參數，設定線上檢視程式。
+您可以在 [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (適用於新的伺服器陣列) 或 [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (適用於現有的伺服器陣列) 中使用下列 Windows PowerShell 參數，設定線上檢視程式。
 
-  - **OpenFromUrlEnabled：**開啟或關閉線上檢視程式。此參數可以為具有 URL 和 UNC 路徑的檔案，控制線上檢視程式。根據預設，當您建立新的 Office Web Apps Server 伺服器陣列時，此參數會設為 False (停用)。
+  - **OpenFromUrlEnabled：** 開啟或關閉線上檢視程式。此參數可以為具有 URL 和 UNC 路徑的檔案，控制線上檢視程式。根據預設，當您建立新的 Office Web Apps Server 伺服器陣列時，此參數會設為 False (停用)。
 
   - **OpenFromUncEnabled**   當線上檢視程式開啟時 (使用 OpenFromUrlEnabled 設為 True)，此參數會開啟或關閉線上檢視程式顯示 UNC 路徑中檔案的功能。根據預設，此參數設為 True，但是在您允許從 UNC 路徑開啟檔案之前，請確定 OpenFromUrlEnabled 也設為 True。如前所述，如果您已設定 Office Web Apps Server 連接至網際網路，建議您將此參數設為 False。
 
