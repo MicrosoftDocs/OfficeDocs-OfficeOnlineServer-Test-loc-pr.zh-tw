@@ -1,4 +1,4 @@
-﻿---
+---
 title: Office Web Apps 搭配 SharePoint 2013 使用時有何新功能？
 TOCTitle: Office Web Apps 搭配 SharePoint 2013 使用時有何新功能？
 ms:assetid: fc26f45c-fdd2-45be-a924-c8a1c0a5924c
