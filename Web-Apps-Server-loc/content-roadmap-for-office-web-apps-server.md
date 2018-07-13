@@ -27,19 +27,9 @@ Office Web Apps Server 是一款新的 Office 伺服器產品，負責提供瀏�
 
 如果您是 IT 專業人員且想要尋找 Outlook Web App 相關資訊，請參閱＜[Exchange 2013 的 Outlook Web App 新功能](http://go.microsoft.com/fwlink/?linkid=282325)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219449.important(Office.15).gif" title="重要事項" alt="重要事項" /><strong>重要事項：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文適用於組織中部署及管理 Office Web Apps Server 的系統管理員。<br />
-<strong>您要瞭解如何在桌上型電腦或行動裝置上使用 Office Web Apps 嗎？</strong>您可以參閱＜<a href="http://go.microsoft.com/fwlink/p/?linkid=269811">開始使用 Office Web Apps</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 本文適用於組織中部署及管理 Office Web Apps Server 的系統管理員。<br />
+<strong>您要瞭解如何在桌上型電腦或行動裝置上使用 Office Web Apps 嗎？</strong>您可以參閱＜<a href="http://go.microsoft.com/fwlink/p/?linkid=269811">開始使用 Office Web Apps</a>＞。
 
 
 下表說明部署及管理 Office Web Apps Server 的 IT 專業人員可使用的資源。

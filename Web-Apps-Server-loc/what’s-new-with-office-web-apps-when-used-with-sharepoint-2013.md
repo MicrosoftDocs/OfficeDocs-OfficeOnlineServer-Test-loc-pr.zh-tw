@@ -68,18 +68,8 @@ _**上次修改主題的時間：**2016-12-16_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SharePoint 2013 中已不再有 PowerPoint 廣播。您還是可以透過 OneDrive 及 Lync Server 2013 來使用此功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> SharePoint 2013 中已不再有 PowerPoint 廣播。您還是可以透過 OneDrive 及 Lync Server 2013 來使用此功能。
 
 
 ### IT 專業人員取得新的安裝與授權功能

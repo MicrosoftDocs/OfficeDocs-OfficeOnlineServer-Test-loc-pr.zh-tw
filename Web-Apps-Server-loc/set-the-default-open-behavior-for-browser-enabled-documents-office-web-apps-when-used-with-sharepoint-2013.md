@@ -33,50 +33,20 @@ _**上次修改主題的時間：**2016-12-16_
 
 一般而言，OpenInClient 功能會覆寫您在 SharePoint 2013 與 Office Web Apps Server 之間設定的所有 WOPI 繫結。換句話說，如果啟用 SharePoint 2013 文件庫或網站集合的 OpenInClient 功能，將會在用戶端應用程式中開啟文件，即使您已經設定 SharePoint 2013 伺服器使用 Office Web Apps Server 也是如此。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>針對供瀏覽器使用的文件設定預設開啟行為，並不影響使用者是否能夠使用 SharePoint 2013 的 [簽出] 和 [傳送到] 功能來下載文件。如需如何在 SharePoint 2013 中設定簽出、下載及檢視權限的詳細資訊，請參閱 <a href="https://technet.microsoft.com/zh-tw/library/cc262939(v=office.15)">在 SharePoint 2013 中規劃網站及內容的權限</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 針對供瀏覽器使用的文件設定預設開啟行為，並不影響使用者是否能夠使用 SharePoint 2013 的 [簽出] 和 [傳送到] 功能來下載文件。如需如何在 SharePoint 2013 中設定簽出、下載及檢視權限的詳細資訊，請參閱 <a href="https://technet.microsoft.com/zh-tw/library/cc262939(v=office.15)">在 SharePoint 2013 中規劃網站及內容的權限</a>。
 
 
 ## 為文件庫或網站集合設定 OpenInClient 功能
 
 使用下列其中一個程序設定 SharePoint 2013 中的 OpenInClient 功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文中的某些程序使用 SharePoint 2013 管理命令介面執行 SharePoint Cmdlet。如果您選擇使用 Windows PowerShell 主控台，則必須使用 <strong>Add-PSSnapin</strong> Cmdlet 新增 Microsoft.SharePoint.PowerShell 嵌入式管理單元。如需 Windows PowerShell 與 SharePoint 2013 如何搭配使用的詳細資訊，請參閱<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">使用 Windows Powershell 管理 SharePoint 2013</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本文中的某些程序使用 SharePoint 2013 管理命令介面執行 SharePoint Cmdlet。如果您選擇使用 Windows PowerShell 主控台，則必須使用 <strong>Add-PSSnapin</strong> Cmdlet 新增 Microsoft.SharePoint.PowerShell 嵌入式管理單元。如需 Windows PowerShell 與 SharePoint 2013 如何搭配使用的詳細資訊，請參閱<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">使用 Windows Powershell 管理 SharePoint 2013</a>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用滑鼠、鍵盤快速鍵或觸控等方式完成所有 Office 2013 套裝軟體 中的工作。如需如何使用 Office 產品與服務中的鍵盤快速鍵和觸控功能的詳細資訊，請參閱<a href="http://go.microsoft.com/fwlink/p/?linkid=249150">鍵盤快速鍵</a>與<a href="http://go.microsoft.com/fwlink/p/?linkid=253163">Office 觸控指南</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您可以使用滑鼠、鍵盤快速鍵或觸控等方式完成所有 Office 2013 套裝軟體 中的工作。如需如何使用 Office 產品與服務中的鍵盤快速鍵和觸控功能的詳細資訊，請參閱<a href="http://go.microsoft.com/fwlink/p/?linkid=249150">鍵盤快速鍵</a>與<a href="http://go.microsoft.com/fwlink/p/?linkid=253163">Office 觸控指南</a>。
 
 
  **設定網站集合的 OpenInClient 功能**
@@ -101,18 +71,8 @@ _**上次修改主題的時間：**2016-12-16_
     
     管理員可以使用 **Add-SPShellAdmin** Cmdlet 來授與使用 SharePoint 2013 Cmdlet 的權限。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您沒有權限，請連絡安裝程式系統管理員或 SQL Server 系統管理員要求權限。如需 Windows PowerShell 權限的其他資訊，請參閱<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">權限</a>與 <a href="https://technet.microsoft.com/zh-tw/library/ff607596(v=office.15)">Add-SPShellAdmin</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> 如果您沒有權限，請連絡安裝程式系統管理員或 SQL Server 系統管理員要求權限。如需 Windows PowerShell 權限的其他資訊，請參閱<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">權限</a>與 <a href="https://technet.microsoft.com/zh-tw/library/ff607596(v=office.15)">Add-SPShellAdmin</a>。
 
 
 2.  開啟已提升權限的 SharePoint 2013 管理命令介面：
@@ -187,18 +147,8 @@ _**上次修改主題的時間：**2016-12-16_
     
     管理員可以使用 **Add-SPShellAdmin** Cmdlet 來授與使用 SharePoint 2013 Cmdlet 的權限。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您沒有權限，請連絡安裝程式系統管理員或 SQL Server 系統管理員要求權限。如需 Windows PowerShell 權限的其他資訊，請參閱<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">權限</a>與 <a href="https://technet.microsoft.com/zh-tw/library/ff607596(v=office.15)">Add-SPShellAdmin</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> 如果您沒有權限，請連絡安裝程式系統管理員或 SQL Server 系統管理員要求權限。如需 Windows PowerShell 權限的其他資訊，請參閱<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">權限</a>與 <a href="https://technet.microsoft.com/zh-tw/library/ff607596(v=office.15)">Add-SPShellAdmin</a>。
 
 
 2.  開啟已提升權限的 SharePoint 2013 管理命令介面：
