@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**尋找技術參考文章，例如 Office Web Apps 的 SPWOPI Windows PowerShell Cmdlet 說明。
+**摘要：** 尋找技術參考文章，例如 Office Web Apps 的 SPWOPI Windows PowerShell Cmdlet 說明。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 與 SharePoint 2013 內部部署搭配使用時，Office Web Apps 會提供更新版本的 Word Web App、Excel Web App、PowerPoint Web App 及 OneNote Web App。使用者可以在電腦及不同的行動裝置 (例如 Windows Phone、iPhone 及 iPad) 上，使用受支援的網頁瀏覽器來檢視及選擇性地編輯 Office 文件。
 

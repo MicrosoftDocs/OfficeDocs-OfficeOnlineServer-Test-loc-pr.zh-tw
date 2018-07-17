@@ -23,34 +23,14 @@ _**上次修改主題的時間：** 2016-12-16_
 
 在新版 Office Web Apps Server 推出之後，Microsoft 提供了一系列的軟體更新來協助改善伺服器的安全性、效能和可靠性。本文說明如何套用軟體更新到 Office Web Apps Server Server 陣列中的個別伺服器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219449.important(Office.15).gif" title="重要事項" alt="重要事項" /><strong>重要事項：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文為＜<a href="content-roadmap-for-office-web-apps-server.md">Office Web Apps Server 的內容藍圖</a>＞的一部分。請使用藍圖做為協助您部署和管理 Office Web Apps Server 之文章、下載及影片的起點。<br />
-<strong>您在尋找在桌上型電腦或行動裝置上使用 Office Web Apps 的協助嗎？</strong>您可以在 <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a> 上搜尋 &quot;Office Web Apps&quot; 來尋找此資訊。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 本文為＜<a href="content-roadmap-for-office-web-apps-server.md">Office Web Apps Server 的內容藍圖</a>＞的一部分。請使用藍圖做為協助您部署和管理 Office Web Apps Server 之文章、下載及影片的起點。<br />
+<strong>您在尋找在桌上型電腦或行動裝置上使用 Office Web Apps 的協助嗎？</strong>您可以在 <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a> 上搜尋 &quot;Office Web Apps&quot; 來尋找此資訊。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ966220.warning(Office.15).gif" title="警告" alt="警告" /><strong>警告：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Office Web Apps Server 不支援使用自動更新程序來套用 Office Web Apps Server 更新。這是因為 Office Web Apps Server 的更新必須以本文所述的特定方式套用。如果自動套用 Office Web Apps Server 更新，使用者可能無法在 Office Web Apps 檢視或編輯文件。如果發生此情況，您必須重建 Office Web Apps Server 伺服器陣列。若要重建伺服器陣列，您必須使用 <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a> 從伺服器陣列中移除 Office Web Apps Server、使用 [新增或移除程式] 解除安裝 Office Web Apps Server，然後依照＜<a href="deploy-office-web-apps-server.md">部署 Office Web Apps Server</a>＞中所述的步驟重新安裝 Office Web Apps Server。在重新安裝之後，再依照本文章所述的步驟套用更新。<br />
-請務必檢閱＜<a href="plan-office-web-apps-server.md">規劃 Office Web Apps Server 更新</a>＞中的方針，建立 Office Web Apps Server 伺服器陣列的更新程序。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Office Web Apps Server 不支援使用自動更新程序來套用 Office Web Apps Server 更新。這是因為 Office Web Apps Server 的更新必須以本文所述的特定方式套用。如果自動套用 Office Web Apps Server 更新，使用者可能無法在 Office Web Apps 檢視或編輯文件。如果發生此情況，您必須重建 Office Web Apps Server 伺服器陣列。若要重建伺服器陣列，您必須使用 <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a> 從伺服器陣列中移除 Office Web Apps Server、使用 [新增或移除程式] 解除安裝 Office Web Apps Server，然後依照＜<a href="deploy-office-web-apps-server.md">部署 Office Web Apps Server</a>＞中所述的步驟重新安裝 Office Web Apps Server。在重新安裝之後，再依照本文章所述的步驟套用更新。<br />
+請務必檢閱＜<a href="plan-office-web-apps-server.md">規劃 Office Web Apps Server 更新</a>＞中的方針，建立 Office Web Apps Server 伺服器陣列的更新程序。
 
 
 ## 開始之前
@@ -61,25 +41,12 @@ _**上次修改主題的時間：** 2016-12-16_
 
 在升級過程中，您將必須重建 Office Web Apps Server伺服器陣列。要準備重建 Office Web Apps Server 伺服器陣列時，檢閱您目前的 Office Web Apps Server 伺服器陣列內容，方法是執行 Windows PowerShell Cmdlet **Get-OfficeWebAppsFarm** 並檢閱 [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) 的參數。您用於 **New-OfficeWebAppsFarm** 的參數，應該與您第一次設定 Office Web Apps Server 伺服器陣列時使用的參數相同。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用滑鼠、快速鍵或觸控等方式來完成本文中的工作。如需詳細資訊，請參閱下列資源：
-<ul>
-<li><p><a href="http://go.microsoft.com/fwlink/?linkid=249150%26clcid=0x404">快速鍵</a></p></li>
-<li><p><a href="http://go.microsoft.com/fwlink/?linkid=249151%26clcid=0x404">觸控</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您可以使用滑鼠、快速鍵或觸控等方式來完成本文中的工作。如需詳細資訊，請參閱下列資源：
+> <ul>
+> <li><p><a href="http://go.microsoft.com/fwlink/?linkid=249150%26clcid=0x404">快速鍵</a></p></li>
+> <li><p><a href="http://go.microsoft.com/fwlink/?linkid=249151%26clcid=0x404">觸控</a></p></li>
+> </ul>
 
 
 ## 套用軟體更新至由單伺服器的 Office Web Apps Server 伺服器陣列

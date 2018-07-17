@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**提供 Office Web Apps、Office Web Apps Server 以及其如何在內部部署中與 SharePoint 2013 搭配運作的資訊。
+**摘要：** 提供 Office Web Apps、Office Web Apps Server 以及其如何在內部部署中與 SharePoint 2013 搭配運作的資訊。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 與 SharePoint Server 2013 一起使用時，Office Web Apps Server 會提供更新版本的 Word Web App、Excel Web App、PowerPoint Web App 及 OneNote Web App。使用者可以在電腦及許多行動裝置 (例如 Windows Phone、iPhone、iPad、Windows 8 平板電腦及 Android 裝置) 上，使用受支援的網頁瀏覽器來檢視及 (在某些情況下) 編輯 SharePoint 程式庫中的 Office 文件。
 

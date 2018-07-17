@@ -1,4 +1,4 @@
-﻿---
+---
 title: Office Web Apps 搭配 SharePoint 2013 使用時有何新功能？
 TOCTitle: Office Web Apps 搭配 SharePoint 2013 使用時有何新功能？
 ms:assetid: fc26f45c-fdd2-45be-a924-c8a1c0a5924c
@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**說明 SharePoint 2013 使用者與系統管理員在使用 Office Web Apps 時可使用的新功能。
+**摘要：** 說明 SharePoint 2013 使用者與系統管理員在使用 Office Web Apps 時可使用的新功能。
 
 
 使用者如果處理 SharePoint 2013 內文件庫中的 Office 檔案，即可利用下表特地列出的一些新功能。
@@ -68,18 +68,8 @@ _**上次修改主題的時間：**2016-12-16_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SharePoint 2013 中已不再有 PowerPoint 廣播。您還是可以透過 OneDrive 及 Lync Server 2013 來使用此功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> SharePoint 2013 中已不再有 PowerPoint 廣播。您還是可以透過 OneDrive 及 Lync Server 2013 來使用此功能。
 
 
 ### IT 專業人員取得新的安裝與授權功能

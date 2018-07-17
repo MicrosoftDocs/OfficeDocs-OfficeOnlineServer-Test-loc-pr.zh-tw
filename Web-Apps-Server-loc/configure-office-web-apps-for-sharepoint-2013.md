@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**說明如何設定 SharePoint 2013 使用 Office Web Apps。
+**摘要：** 說明如何設定 SharePoint 2013 使用 Office Web Apps。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 本文接續＜[部署 Office Web Apps Server](deploy-office-web-apps-server.md)＞的內容。在該文中，您設定了執行 Office Web Apps Server 的伺服器。在本文中，您將設定 SharePoint 2013 來使用 Office Web Apps Server。首先，您需要從 SharePoint 2013 執行一些 Windows PowerShell Cmdlet，之後，使用者便可以使用瀏覽器開啟 SharePoint 2013 文件庫中的 Office 檔案。
 

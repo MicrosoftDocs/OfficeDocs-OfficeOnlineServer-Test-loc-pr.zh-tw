@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**適用版本：**Office Web Apps, Office Web Apps Server_
+_**適用版本：** Office Web Apps, Office Web Apps Server_
 
-_**上次修改主題的時間：**2016-12-16_
+_**上次修改主題的時間：** 2016-12-16_
 
-**摘要：**提供文章、下載及其他資源的指南，指出哪些資源可協助 IT 專業人員部署及管理 Office Web Apps Server。
+**摘要：** 提供文章、下載及其他資源的指南，指出哪些資源可協助 IT 專業人員部署及管理 Office Web Apps Server。
 
-**對象：**IT 專業人員
+**對象：** IT 專業人員
 
 ![適用於 IT 專業人員的內容藍圖 (橫幅影像)](images/Dn135237.38433eef-287a-455e-8dbb-6a85252a5eb8(Office.15).gif "適用於 IT 專業人員的內容藍圖 (橫幅影像)")
 
@@ -27,19 +27,9 @@ Office Web Apps Server 是一款新的 Office 伺服器產品，負責提供瀏�
 
 如果您是 IT 專業人員且想要尋找 Outlook Web App 相關資訊，請參閱＜[Exchange 2013 的 Outlook Web App 新功能](http://go.microsoft.com/fwlink/?linkid=282325)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219449.important(Office.15).gif" title="重要事項" alt="重要事項" /><strong>重要事項：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文適用於組織中部署及管理 Office Web Apps Server 的系統管理員。<br />
-<strong>您要瞭解如何在桌上型電腦或行動裝置上使用 Office Web Apps 嗎？</strong>您可以參閱＜<a href="http://go.microsoft.com/fwlink/p/?linkid=269811">開始使用 Office Web Apps</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 本文適用於組織中部署及管理 Office Web Apps Server 的系統管理員。<br />
+<strong>您要瞭解如何在桌上型電腦或行動裝置上使用 Office Web Apps 嗎？</strong>您可以參閱＜<a href="http://go.microsoft.com/fwlink/p/?linkid=269811">開始使用 Office Web Apps</a>＞。
 
 
 下表說明部署及管理 Office Web Apps Server 的 IT 專業人員可使用的資源。
