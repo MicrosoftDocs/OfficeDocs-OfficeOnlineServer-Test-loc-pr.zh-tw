@@ -12,9 +12,9 @@ ms.translationtype: HT
 # 套用軟體更新至 Office Web Apps Server
  
 
-**適用版本：** Office Web Apps Server
+_**適用版本：** Office Web Apps Server_
 
-**上次修改主題的時間：** 2016-12-16
+_**上次修改主題的時間：** 2016-12-16_
 
 **摘要：** 說明如何套用軟體更新到 Office Web Apps Server 陣列。
 
