@@ -12,10 +12,9 @@ ms.translationtype: HT
 # Office Web Apps 的技術參考 (含 SharePoint 2013)
 
  
+_<strong>適用版本：</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
-
-**上次修改主題的時間：** 2016-12-16
+_<strong>上次修改主題的時間：</strong> 2016-12-16_
 
 **摘要：** 尋找技術參考文章，例如 Office Web Apps 的 SPWOPI Windows PowerShell Cmdlet 說明。
 

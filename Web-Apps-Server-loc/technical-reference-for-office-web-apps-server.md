@@ -11,11 +11,10 @@ ms.translationtype: HT
 
 # Office Web Apps Server 的技術參考
 
- 
 
-**適用版本：** Office Web Apps Server
+_<strong>適用版本：</strong> Office Web Apps Server_
 
-**上次修改主題的時間：** 2016-12-16
+_<strong>上次修改主題的時間：</strong> 2016-12-16_
 
 **摘要：** 包含技術參考文章的連結，例如 Office Web Apps Server 的 OfficeWebApps Windows PowerShell Cmdlet 的說明。
 

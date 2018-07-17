@@ -9,13 +9,12 @@ mtps_version: v=office.15
 ms.translationtype: MT
 ---
 
-# Office Web Apps Server 概觀
+# Office Web Apps Server 概觀 
 
- 
 
-**適用版本：** Office Web Apps Server
+_<strong>適用版本：</strong> Office Web Apps Server_
 
-**上次修改主題的時間：** 2017-05-26
+_<strong>上次修改主題的時間：</strong> 2017-05-26_
 
 **摘要：** 了解 Office Web Apps Server，以及其如何為受支援的主機提供瀏覽器型 Office 功能。
 
@@ -23,19 +22,9 @@ ms.translationtype: MT
 
 Office Web Apps Server是將瀏覽器型版本的Word、 PowerPoint、 Excel及OneNote新Office伺服器產品。單一 Office Web Apps Server 伺服器陣列可支援透過SharePoint 2013、 Lync Server 2013、 共用的資料夾及網站存取Office檔案的使用者。新的獨立部署模型表示您可以管理更新至 Office Web Apps Server 伺服器陣列獨立部署其他Office Server 產品在組織中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219449.important(Office.15).gif" title="重要事項" alt="重要事項" /> <strong>重要事項：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文為＜<a href="content-roadmap-for-office-web-apps-server.md">Office Web Apps Server 的內容藍圖</a>＞的一部分。請使用藍圖做為協助您部署和管理 Office Web Apps Server 之文章、下載及影片的起點。<br />
-<strong>您在尋找在桌上型電腦或行動裝置上使用 Office Web Apps 的協助嗎？</strong>您可以在 <a href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a> 上搜尋 &quot;Office Web Apps&quot; 來尋找此資訊。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 本文為＜<a href="content-roadmap-for-office-web-apps-server.md">Office Web Apps Server 的內容藍圖</a>＞的一部分。請使用藍圖做為協助您部署和管理 Office Web Apps Server 之文章、下載及影片的起點。<br />
+<strong>您在尋找在桌上型電腦或行動裝置上使用 Office Web Apps 的協助嗎？</strong>您可以在 <a href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a> 上搜尋 &quot;Office Web Apps&quot; 來尋找此資訊。
 
 
 本文內容：
@@ -70,18 +59,8 @@ Office Web Apps Server是提供瀏覽器為基礎的檔案檢視和編輯Office�
 
 ![這個圖表摘要說明不同裝置上 Office Web Apps 的檢視和編輯功能。圖中反白顯示已針對觸控螢幕進行最佳化的功能。](images/Ff431685.8bf76669-f511-4e02-8ed3-d658e9e746f0(Office.15).gif "這個圖表摘要說明不同裝置上 Office Web Apps 的檢視和編輯功能。圖中反白顯示已針對觸控螢幕進行最佳化的功能。")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /> <strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SharePoint 2013 中已移除 PowerPoint 廣播。您可以透過 OneDrive 和 Lync Server 2013 來使用此功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> SharePoint 2013 中已移除 PowerPoint 廣播。您可以透過 OneDrive 和 Lync Server 2013 來使用此功能。
 
 
 如需 Office Web Apps 新功能的詳細資訊，請參閱＜[Office Web Apps 如何在內部部署中與 SharePoint 2013 搭配使用](how-office-web-apps-work-on-premises-with-sharepoint-2013.md)＞。
@@ -114,18 +93,8 @@ Office Web Apps Server 在位址 http://*OfficeWebAppsServername*/op/generate.as
 
 如需線上檢視程式的詳細資訊，請參閱＜[規劃線上檢視程式](plan-office-web-apps-server.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /> <strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 在 <a href="http://go.microsoft.com/fwlink/?linkid=256548%26clcid=0x404">Office.com</a> 上有裝載限定網際網路對應版的「建立 URL」功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Microsoft 在 <a href="http://go.microsoft.com/fwlink/?linkid=256548%26clcid=0x404">Office.com</a> 上有裝載限定網際網路對應版的「建立 URL」功能。
 
 
 ## 另請參閱

@@ -51,18 +51,8 @@ ms.translationtype: HT
 
   - Office Web Apps Server 預設可讓您檢視 Office 檔案，但不能編輯。若要編輯檔案，您需要有編輯授權 (請參閱＜[規劃 Office Web Apps (與 SharePoint 2013 搭配使用)](plan-office-web-apps-used-with-sharepoint-2013.md)＞及＜[在 SharePoint Server 2013 中設定授權](https://technet.microsoft.com/zh-tw/library/jj219627\(v=office.15\))＞)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用滑鼠、快速鍵或觸控等方式完成所有 Office 2013 套裝軟體 中的工作。如需如何使用 Office 產品與服務中的快速鍵和觸控功能的詳細資訊，請參閱＜<a href="https://go.microsoft.com/fwlink/p/?linkid=249150">快速鍵</a>＞與＜<a href="https://go.microsoft.com/fwlink/p/?linkid=253163">Office 觸控指南</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您可以使用滑鼠、快速鍵或觸控等方式完成所有 Office 2013 套裝軟體 中的工作。如需如何使用 Office 產品與服務中的快速鍵和觸控功能的詳細資訊，請參閱＜<a href="https://go.microsoft.com/fwlink/p/?linkid=249150">快速鍵</a>＞與＜<a href="https://go.microsoft.com/fwlink/p/?linkid=253163">Office 觸控指南</a>＞。
 
 
 ## 準備伺服器來執行 Office Web Apps Server
@@ -149,34 +139,14 @@ Windows Server 2008 R2、Windows Server 2012 與 Windows Server 2012 R2 的必�
 
 6.  下載並安裝 [Office Web Apps Server SP1](https://go.microsoft.com/fwlink/p/?linkid=510097) (對於 Windows Server 2012 和 Windows Server 2008 R2 SP1 而言為建議項目。對於 Windows Server 2012 R2 而言則為必要項目。)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您之後想要套用 Office Web Apps Server SP1，請遵循＜<a href="apply-software-updates-to-office-web-apps-server.md">套用軟體更新至 Office Web Apps Server</a>＞中的指示。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> 如果您之後想要套用 Office Web Apps Server SP1，請遵循＜<a href="apply-software-updates-to-office-web-apps-server.md">套用軟體更新至 Office Web Apps Server</a>＞中的指示。
 
 
 7.  檢閱 [Office、Office Server 與相關產品的 TechNet 更新中心](https://go.microsoft.com/fwlink/p/?linkid=280271)上的清單，看看是否有最新的 Office Web Apps Server 更新。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您並未安裝 Office Web Apps Server SP1，請套用 <a href="https://go.microsoft.com/fwlink/p/?linkid=296579">KB2810007</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> 如果您並未安裝 Office Web Apps Server SP1，請套用 <a href="https://go.microsoft.com/fwlink/p/?linkid=296579">KB2810007</a>。
 
 
 ## 步驟 3：安裝 Office Web Apps Server 的語言套件
@@ -194,43 +164,20 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
 4.  當安裝程式完成安裝 Office Web Apps Server 時，選擇 \[關閉\]。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219449.important(Office.15).gif" title="重要事項" alt="重要事項" /><strong>重要事項：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>若要在建立 Office Web Apps Server 伺服器陣列後安裝語言套件，您必須從伺服器陣列中移除某台伺服器、在該伺服器上安裝語言套件，然後再將伺服器加回伺服器陣列中。</p></li>
-<li><p>若要讓語言套件正常運作，您需要將它安裝在伺服器陣列的所有伺服器上。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> <ul>
+> <li><p>若要在建立 Office Web Apps Server 伺服器陣列後安裝語言套件，您必須從伺服器陣列中移除某台伺服器、在該伺服器上安裝語言套件，然後再將伺服器加回伺服器陣列中。</p></li>
+> <li><p>若要讓語言套件正常運作，您需要將它安裝在伺服器陣列的所有伺服器上。</p></li>
+> </ul>
 
 
 ## 部署 Office Web Apps Server 伺服器陣列
 
 請根據您想要建立的 Office Web Apps Server 伺服器陣列類型，遵循下列三節之一的程序 。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Ee890080.tip(Office.15).gif" title="提示" alt="提示" /><strong>提示：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 Windows PowerShell 無法識別您執行的 <strong>New-OfficeWebAppsFarm</strong> Cmdlet，您可能需要匯入 <strong>OfficeWebApps</strong> 模組。請使用下列命令：<br />
-<code>Import-Module -Name OfficeWebApps</code></td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 如果 Windows PowerShell 無法識別您執行的 <strong>New-OfficeWebAppsFarm</strong> Cmdlet，您可能需要匯入 <strong>OfficeWebApps</strong> 模組。請使用下列命令：<br />
+<code>Import-Module -Name OfficeWebApps</code>
 
 
 ## 部署使用 HTTP 的單一伺服器 Office Web Apps Server 伺服器陣列
@@ -343,18 +290,8 @@ urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><r
 default="true" ext="xls"/><action name="view" 
 ```
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>依據網頁瀏覽器的安全性設定，在搜索 XML 檔案的內容顯示之前，您可能會看到訊息提示您選取 <strong>[顯示所有內容]</strong>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 依據網頁瀏覽器的安全性設定，在搜索 XML 檔案的內容顯示之前，您可能會看到訊息提示您選取 <strong>[顯示所有內容]</strong>。
 
 
 ## 步驟 3：設定主機
@@ -423,18 +360,8 @@ default="true" ext="xls"/><action name="view"
     <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
 ```
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /><strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>依據網頁瀏覽器的安全性設定，在搜索 XML 檔案的內容顯示之前，您可能會看到訊息提示您選取 <strong>[顯示所有內容]</strong>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 依據網頁瀏覽器的安全性設定，在搜索 XML 檔案的內容顯示之前，您可能會看到訊息提示您選取 <strong>[顯示所有內容]</strong>。
 
 
 ## 步驟 4：設定主機

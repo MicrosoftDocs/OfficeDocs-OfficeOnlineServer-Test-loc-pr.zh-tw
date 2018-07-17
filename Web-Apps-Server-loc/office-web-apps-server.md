@@ -11,11 +11,9 @@ ms.translationtype: HT
 
 # Office Web Apps Server
 
- 
+_<strong>適用版本：</strong> Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
 
-**適用版本：** Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
-
-**上次修改主題的時間：** 2016-12-16
+_<strong>上次修改主題的時間：</strong> 2016-12-16_
 
 **摘要：** 包含協助您在最近更新的 Office Web Apps 架構中使用 Office Web Apps Server 的文章。
 

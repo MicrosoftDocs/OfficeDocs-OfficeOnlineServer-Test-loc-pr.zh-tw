@@ -9,13 +9,12 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# 規劃 Office Web Apps (與 SharePoint 2013 搭配使用)
+# 規劃 Office Web Apps (與 SharePoint 2013 搭配使用) 
 
- 
 
-**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
+_<strong>適用版本：</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-**上次修改主題的時間：** 2016-12-16
+_<strong>上次修改主題的時間：</strong> 2016-12-16_
 
 **摘要：** 檢閱 Office Web Apps 搭配 SharePoint 2013 內部部署使用的規劃指引。
 
@@ -23,20 +22,9 @@ ms.translationtype: HT
 
 若要規劃 Office Web Apps 與 SharePoint 2013 內部部署的搭配使用，應檢閱使用 Office Web Apps 來檢視及編輯 Office 檔案的瀏覽器支援、SharePoint 驗證需求和授權考量事項。然後，您就可以決定當使用者從 SharePoint 2013 文件庫開啟 Office 檔案時，要讓 SharePoint 2013 使用網頁瀏覽器還是用戶端應用程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219449.important(Office.15).gif" title="重要事項" alt="重要事項" /><strong>重要事項：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文是 <a href="content-roadmap-for-office-web-apps-server.md">Office Web Apps Server 的內容藍圖</a>的一部分。請以藍圖做為起點來取得文章、下載檔及影片，以協助您部署及管理 Office Web Apps Server。<br />
-<strong>您在尋找在桌上型電腦或行動裝置上使用 Office Web Apps 的協助嗎？</strong>您可以在 <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a> 上搜尋 &quot;Office Web Apps&quot; 來尋找此資訊。</td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> 本文是 <a href="content-roadmap-for-office-web-apps-server.md">Office Web Apps Server 的內容藍圖</a>的一部分。請以藍圖做為起點來取得文章、下載檔及影片，以協助您部署及管理 Office Web Apps Server。<br />
+<strong>您在尋找在桌上型電腦或行動裝置上使用 Office Web Apps 的協助嗎？</strong>您可以在 <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a> 上搜尋 &quot;Office Web Apps&quot; 來尋找此資訊。
 
 本文內容：
 

@@ -10,12 +10,11 @@ ms.translationtype: MT
 ---
 
 # 搭配並用 Office Web Apps 與 SharePoint 2013
-
  
 
-**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
+_<strong>適用版本：</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-**上次修改主題的時間：** 2017-05-26
+_<strong>上次修改主題的時間：</strong> 2017-05-26_
 
 **摘要：** 包含有助於了解如何內部部署和設定 Office Web Apps for SharePoint 2013 的文章。
 

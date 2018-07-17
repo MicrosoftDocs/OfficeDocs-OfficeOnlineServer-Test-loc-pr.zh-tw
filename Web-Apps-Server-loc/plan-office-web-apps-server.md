@@ -29,18 +29,8 @@ Office Web Apps Server 在內部部署環境中提供瀏覽器型版本的 Offic
 
   - [部署 Office Web Apps Server 及 Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /> <strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SharePoint 2010 產品不能為Office Web Apps Server的主機。Office Web Apps Server不支援SharePoint Foundation 2010或SharePoint Server 2010。Office Web Apps Server也不受支援Exchange Server 2013。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> SharePoint 2010 產品不能為Office Web Apps Server的主機。Office Web Apps Server不支援SharePoint Foundation 2010或SharePoint Server 2010。Office Web Apps Server也不受支援Exchange Server 2013。
 
 
 本文內容：
@@ -103,18 +93,8 @@ Office Web Apps Server 伺服器陣列中的所有伺服器必須是網域的一
 
 以下是「確實」需要安裝的項目。如需詳細資料，請參閱下列表格。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219449.important(Office.15).gif" title="重要事項" alt="重要事項" /> <strong>重要事項：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>從<a href="https://go.microsoft.com/fwlink/p/?linkid=256561">大量授權服務服務中心 (VLSC)</a>下載只有Office Web Apps Server 。若要下載Office Web Apps Server必須授權之大量授權合約， Office Professional Plus 2013、 Office Standard 2013，或Office for Mac 2011下。下載 （英文） 位於下 VLSC 入口網站這些Office產品。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 從<a href="https://go.microsoft.com/fwlink/p/?linkid=256561">大量授權服務服務中心 (VLSC)</a>下載只有Office Web Apps Server 。若要下載Office Web Apps Server必須授權之大量授權合約， Office Professional Plus 2013、 Office Standard 2013，或Office for Mac 2011下。下載 （英文） 位於下 VLSC 入口網站這些Office產品。
 
 
 ### Office Web Apps Server 所需的下載、伺服器角色及功能
@@ -384,18 +364,8 @@ Office Web Apps Server 使用的憑證必須符合下列需求：
 
   - **針對負載平衡伺服器陣列**   如果您卸載 SSL，必須將憑證匯入硬體負載平衡器。如果您未卸載 SSL，您必須在 Office Web Apps Server 伺服器陣列中的每部伺服器安裝憑證。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219452.note(Office.15).gif" title="注意事項" alt="注意事項" /> <strong>附註：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除非在非關鍵測試環境中，否則請勿使用自我簽署憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 除非在非關鍵測試環境中，否則請勿使用自我簽署憑證。
 
 
 如需憑證的詳細資訊，請參閱 ＜[如何取得 SSL 憑證](https://go.microsoft.com/fwlink/p/?linkid=269700)。
@@ -422,18 +392,8 @@ Office Web Apps Server 使用的憑證必須符合下列需求：
 
 您可以在建立 Office Web Apps Server 伺服器陣列之後，再將網域新增至允許清單。若要瞭解如何新增網域至允許清單，請參閱 [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219449.important(Office.15).gif" title="重要事項" alt="重要事項" /> <strong>重要事項：</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您不新增網域至允許清單，Office Web Apps Server 會允許任何網域中的主機提出檔案要求。如果從網際網路可以存取您的 Office Web Apps Server 伺服器陣列，請務必不要將此清單留白。否則，任何人都可以使用您的 Office Web Apps Server 伺服器陣列來檢視及編輯內容。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您不新增網域至允許清單，Office Web Apps Server 會允許任何網域中的主機提出檔案要求。如果從網際網路可以存取您的 Office Web Apps Server 伺服器陣列，請務必不要將此清單留白。否則，任何人都可以使用您的 Office Web Apps Server 伺服器陣列來檢視及編輯內容。
 
 
 ## 規劃 Office Web Apps Server 的線上檢視程式

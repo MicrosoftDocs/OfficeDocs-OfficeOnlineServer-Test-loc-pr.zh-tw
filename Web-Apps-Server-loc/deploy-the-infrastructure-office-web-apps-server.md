@@ -11,11 +11,10 @@ ms.translationtype: HT
 
 # 部署基礎結構：Office Web Apps Server
 
- 
 
-**適用版本：** Office Web Apps Server
+_<strong>適用版本：</strong> Office Web Apps Server_
 
-**上次修改主題的時間：** 2016-12-16
+_<strong>上次修改主題的時間：</strong> 2016-12-16_
 
 **摘要：** 包含 Office Web Apps Server 以及其如何為主機提供 Office Web Apps 功能的相關文章。
 
