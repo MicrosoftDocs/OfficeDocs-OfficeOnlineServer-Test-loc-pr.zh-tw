@@ -192,7 +192,7 @@ Office Web Apps Server 2013 語言套件可讓使用者以多種語言檢視 Web
 
 **參數**
 
-  - **–InternalURL** 是執行 Office Web Apps Server 的伺服器名稱，例如 **http://servername**。
+  - **–InternalURL** 是執行 Office Web Apps Server 的伺服器名稱，例如 <strong>http://servername</strong>。
 
   - **–AllowHttp** 會設定伺服器陣列來使用 HTTP。
 
