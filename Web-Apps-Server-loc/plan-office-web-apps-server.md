@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-**適用版本：** Office Web Apps Server
+_**適用版本：** Office Web Apps Server_
 
-**上次修改主題的時間：** 2017-10-10
+_**上次修改主題的時間：** 2017-10-10_
 
 **摘要：** 描述 Office Web Apps Server 需求和先決條件，包括 HTTPS、憑證、虛擬化、負載平衡、拓撲及安全性。
 
