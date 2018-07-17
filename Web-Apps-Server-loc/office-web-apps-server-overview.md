@@ -9,13 +9,12 @@ mtps_version: v=office.15
 ms.translationtype: MT
 ---
 
-# Office Web Apps Server 概觀
+# Office Web Apps Server 概觀 
 
- 
 
-_**適用版本：** Office Web Apps Server_
+_<strong>適用版本：</strong> Office Web Apps Server_
 
-_**上次修改主題的時間：** 2017-05-26_
+_<strong>上次修改主題的時間：</strong> 2017-05-26_
 
 **摘要：** 了解 Office Web Apps Server，以及其如何為受支援的主機提供瀏覽器型 Office 功能。
 

@@ -11,11 +11,10 @@ ms.translationtype: HT
 
 # Office Web Apps 搭配 SharePoint 2013 使用時有何新功能？
 
- 
 
-_**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>適用版本：</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：** 2016-12-16_
+_<strong>上次修改主題的時間：</strong> 2016-12-16_
 
 **摘要：** 說明 SharePoint 2013 使用者與系統管理員在使用 Office Web Apps 時可使用的新功能。
 

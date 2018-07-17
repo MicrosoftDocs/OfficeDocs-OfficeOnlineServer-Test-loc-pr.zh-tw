@@ -11,11 +11,9 @@ ms.translationtype: HT
 
 # Office Web Apps Server 的內容藍圖
 
- 
+_<strong>適用版本：</strong> Office Web Apps, Office Web Apps Server_
 
-_**適用版本：** Office Web Apps, Office Web Apps Server_
-
-_**上次修改主題的時間：** 2016-12-16_
+_<strong>上次修改主題的時間：</strong> 2016-12-16_
 
 **摘要：** 提供文章、下載及其他資源的指南，指出哪些資源可協助 IT 專業人員部署及管理 Office Web Apps Server。
 

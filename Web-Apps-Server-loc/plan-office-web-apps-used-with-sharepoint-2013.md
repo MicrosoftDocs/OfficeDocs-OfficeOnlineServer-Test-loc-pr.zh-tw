@@ -9,13 +9,12 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# 規劃 Office Web Apps (與 SharePoint 2013 搭配使用)
+# 規劃 Office Web Apps (與 SharePoint 2013 搭配使用) 
 
- 
 
-_**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>適用版本：</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：** 2016-12-16_
+_<strong>上次修改主題的時間：</strong> 2016-12-16_
 
 **摘要：** 檢閱 Office Web Apps 搭配 SharePoint 2013 內部部署使用的規劃指引。
 
