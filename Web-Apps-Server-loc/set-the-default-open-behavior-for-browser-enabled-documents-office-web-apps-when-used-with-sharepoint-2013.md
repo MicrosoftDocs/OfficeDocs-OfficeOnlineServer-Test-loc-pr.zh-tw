@@ -9,13 +9,12 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# 設定供瀏覽器使用之文件的預設開啟行為 (搭配 SharePoint 2013 使用時為 Office Web Apps)
+# 設定供瀏覽器使用之文件的預設開啟行為 (搭配 SharePoint 2013 使用時為 Office Web Apps) 
 
- 
 
-_**適用版本：** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>適用版本：</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**上次修改主題的時間：** 2016-12-16_
+_<strong>上次修改主題的時間：</strong> 2016-12-16_
 
 **摘要：** 說明如何為 SharePoint 網站集合和文件庫中的 Office 文件設定預設開啟行為
 
@@ -99,23 +98,31 @@ _**上次修改主題的時間：** 2016-12-16_
     
       - 若要啟用特定網站集合 (在用戶端應用程式中開啟文件) 的 OpenInClient 功能，輸入下列命令：
         
+        ```PowerShell
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+        ```
+        ``` 
         其中 *\<SiteCollURL\>* 是網站集合的 URL。
-    
+        ```    
       - 若要啟用所有網站集合 (在用戶端應用程式中開啟文件) 的 OpenInClient 功能，輸入下列命令：
-        
+
+        ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
-    
+        ```    
       - 若要停用特定網站集合的 OpenInClient 功能 (以瀏覽器開啟文件)，輸入下列命令：
-        
+
+        ```PowerShell  
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+        ```
+        ``` 
         其中 *\<SiteCollURL\>* 是網站集合的 URL。
+        ```
     
       - 若要停用所有網站集合的 OpenInClient 功能 (以瀏覽器開啟文件)，輸入下列命令：
-        
+
+        ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
+        ```
 
  **使用 \[文件庫設定\] 頁面設定文件庫的預設開啟行為**
 
@@ -173,7 +180,9 @@ _**上次修改主題的時間：** 2016-12-16_
 
 3.  在 Windows PowerShell 命令提示字元處，輸入下列命令：
     
+      ```PowerShell
         Get-SPWeb -site <SiteCollURL> | % {$_.Lists} | where {$_.IrmEnabled -eq $true} | % {$_.DefaultItemOpen =[Microsoft.Sharepoint.DefaultItemOpen]::<DefaultItemOpenSetting>; $_.Update()}
+      ```
     
     其中：
     
