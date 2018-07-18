@@ -9,7 +9,7 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# 部署 Office Web Apps Server 
+# 部署 Office Web Apps Server 
 
 **適用版本：** Office Web Apps Server
 
@@ -380,7 +380,9 @@ default="true" ext="xls"/><action name="view"
 
 ```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
+```
 
+```PowerShell
     iisreset /restart /noforce
 ```
 
