@@ -121,9 +121,13 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 ```PowerShell
     $config = (Get-SPSecurityTokenServiceConfig)
+```
 
+```PowerShell
     $config.AllowOAuthOverHttp = $true
+```
 
+```PowerShell
     $config.Update()
 ```
 
@@ -275,7 +279,7 @@ Office Web Apps Server 使用區域來決定當與主機 (在此例中為 ShareP
 
 ## 問題：嘗試在 Office Web Apps 中以使用者產生的 URL 檢視 Office 文件時，收到「找不到檔案。原始檔的 URL 不正確，或文件未供公開存取。請確認 URL 正確，然後連絡文件擁有者」錯誤。
 
-您嘗試從使用者產生的 URL 存取檔案大小大於 10 MB 的文件嗎？請確定文件未超過 10 MB。
+您嘗試從使用者產生的 URL 存取檔案大小大於 10 MB 的文件嗎？請確定文件未超過 10 MB。
 
 ## 問題：SharePoint 2013 中未顯示 Office 文件的預覽畫面，卻顯示「此內容無法在框架中顯示」錯誤。
 
