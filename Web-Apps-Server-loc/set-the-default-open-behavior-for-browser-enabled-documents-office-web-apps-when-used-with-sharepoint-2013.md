@@ -101,9 +101,9 @@ _<strong>上次修改主題的時間：</strong> 2016-12-16_
         ```PowerShell
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
         ```
-        ``` 
+        
         其中 *\<SiteCollURL\>* 是網站集合的 URL。
-        ```    
+        
       - 若要啟用所有網站集合 (在用戶端應用程式中開啟文件) 的 OpenInClient 功能，輸入下列命令：
 
         ```PowerShell  
@@ -114,9 +114,9 @@ _<strong>上次修改主題的時間：</strong> 2016-12-16_
         ```PowerShell  
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
         ```
-        ``` 
+        
         其中 *\<SiteCollURL\>* 是網站集合的 URL。
-        ```
+        
     
       - 若要停用所有網站集合的 OpenInClient 功能 (以瀏覽器開啟文件)，輸入下列命令：
 
